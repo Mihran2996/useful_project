@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="music" class="com.example.streamApi.spring.differentInjection.model.RockMusic"/>
+    <bean id="musicPlayer" class="com.example.streamApi.spring.differentInjection.model.MusicPlayer">
+        <!--        name = "music" sa musicPlayerei setMusic() methodne e,spring@ haskanume vor set metod@ sksvume set barov
+           ev qani vor camlcase dzevachapovenq grum javayi mej haskanume vor property-i meji name = "music" da nuyn setMusic() metodne-->
+        <property name="music" ref="music"/>
+    </bean>
+</beans>
