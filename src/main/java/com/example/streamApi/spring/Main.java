@@ -52,4 +52,12 @@ public class Main {
     //@Resource annotation-@ chi karox inject anel constructori mijocov
 
 
+    //Setter injection vs constructor injection?
+    //Constructor injectioni jamanak ogtagorcvume constructor@
+    //Setter injectioni jamanak ogtagorcvum e set method@
+    //Constructor injection@ aydqanel @nterneli che ete kan shat fielder
+    //Setter injection@ @nterneli e
+    //Constructor injection@ pahpanume immutable linel@
+
+
 }

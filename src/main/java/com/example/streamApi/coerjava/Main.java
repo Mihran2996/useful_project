@@ -30,9 +30,9 @@ public class Main {
 
 //   How to clone an object in java? What is cloneable interface? How to make a deep copy?
     //clonavorman hamar unenq erku havanakan tarberak shallow ev deep copy
-    //clone ane;luc petqa implement anenq clonable interfacen teche kunenanq cloneNotSupportedException
+    //clone aneluc petqa implement anenq clonable interfacen teche kunenanq cloneNotSupportedException
     //deep@ xoracvace copy anum
-    //shallow clone-i depqum ete ayd objecti mej ka inject arac object,,menqa ayd inject arac object@ chen clonavorum uxxaki ssilkenenq unenum
+    //shallow clone-i depqum ete ayd objecti mej ka inject arac object,,menqa ayd inject arac object@ chenq clonavorum uxxaki ssilkenenq unenum
     //ev amen popoxutyun ira het kazdi naev original objecti vra
     //deep clony depqum clonavorum enq naev ayd inner obkjectner@
 

@@ -11,6 +11,6 @@ public class Main {
         thread.start();
         thread2.start();
         //erbvor erku thread ashxatumen mi popoxakani het ev sxal texekutyunen stanum resourceic
-        //erku thread@ arden miajamank chen haxordakcvi resource-i het qano vor unenq arden synchronized methodner
+        //erku thread@ arden miajamank chen haxordakcvi resource-i het qani vor unenq arden synchronized methodner
     }
 }
