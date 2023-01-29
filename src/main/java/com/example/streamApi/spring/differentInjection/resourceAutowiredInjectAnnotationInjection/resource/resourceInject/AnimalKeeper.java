@@ -14,7 +14,7 @@ public class AnimalKeeper {
     //private Animal tiger;
 
     //karoxenq ogtagorcel @Qualifier() anotacian
-    //ete nuynis anun@ sxal tanq na ksksi man gal byName'
+    //ete nuynisk anun@ sxal tanq na ksksi man gal byName'
     //isk @Autowired ev @inject annotacianer@ kqcen exception
     @Resource
     @Qualifier("incorrect")
