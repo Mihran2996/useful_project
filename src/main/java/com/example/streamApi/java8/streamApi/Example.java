@@ -160,6 +160,8 @@ public class Example {
 
         //parallel stream@ ogtagorcume fork/join platform@,vor@ nerkayacvele java 1.7-ic sksac
         //tuyle talis ashxatel datai het miangamic stexclov bazmaki threadner
+        //sequential stream@ ogtagorcume mek core ashxatanqi hamar
+        //parallel stream@ processori shat corer
         //ayspes menq karoxenq imanal qani hat hasaneli processorner unenq
         System.out.println(Runtime.getRuntime().availableProcessors());
         //sequental stream@ ashxatume single threadov isk parallel@ mi qani threadov

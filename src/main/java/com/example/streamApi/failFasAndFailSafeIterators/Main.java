@@ -11,7 +11,7 @@ public class Main {
         //Iteratorner@ linumen erku tesaki1 Fail Fast ev Fail Safe
         //Fail Fast iterator@ iteraciayi jamanak erb pordzenq mofify anenq injvor element kunenanq ConcurrentModificationException
         //Fail Fast iterat@ uni modCount field  vor@ cuyce talis colection@ element@ popoxvace te che,ete popoxvace u menq modify enq anum element@ apa kunenanq exception@
-        //Fail Safe i jamank menq chenq unena ayd exception@ ayn kpordzi naravorins efektiv popoxel object@ xusapelov exceptionic
+        //Fail Safe i jamank menq chenq unena ayd exception@ ayn kpordzi hnaravorins efektiv popoxel object@ xusapelov exceptionic
 
 
         //Fail Fast iterator exapmple

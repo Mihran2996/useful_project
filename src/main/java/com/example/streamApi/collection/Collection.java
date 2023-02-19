@@ -111,7 +111,7 @@ public class Collection {
         //Iterator vs Enumeration
         //Enumeration@ chi karox element jnjel
         //Iterator@ karoxe remove anel elementner@
-        //Karoxe kanchvel menak VEctor u mapic
+        //Karoxe kanchvel menak VEctor-ic u mapic
         //iterator@ Fail-Faste isk Enumeration@ Fail-Safe e
 
 

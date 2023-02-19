@@ -7,7 +7,7 @@ public class Main {
     //linuma depq erv Catch block@ chi karox handle ene exception@ ev menqa karoxenq catch blocki mejic throw anel
     //mez petqa rethrow anel aveli manramasnelu exception@ te konkret inj operationi jamanake ayn texi unecel
     //npatak@ aveli bardzr makardakum handle enelne
-    //hmnakan npatak@  chained exception qcelne
+    //himnakan npatak@  chained exception qcelne
 
 
     //Can we write only try block without catch and finally blocks?
@@ -31,7 +31,8 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println(getEx().getCause());
+//        System.out.println(getEx().getCause());
+        System.out.println(getEx().getMessage());
     }
 
     public static Exception getEx() {

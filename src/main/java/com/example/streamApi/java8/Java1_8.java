@@ -1,9 +1,16 @@
 package com.example.streamApi.java8;
 
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 public class Java1_8 {
 
+
+    //What are new features which got introduced in Java 8?
 
     //default forEach() method in Iterable interface.vorn @ndunum e Consumer funqtional tip
     //default and static methods in Interfaces
@@ -12,6 +19,45 @@ public class Java1_8 {
     //permGen@ popxvele metaspcae
     //lyambda
     //Optional Class
+
+    //functional interface
+    //bolor functional interfacener@ petqe unenan @FunctionalInterface anotacian
+    //yuraqanchyur interface vorn uni mek abstract method hamaravume functional interface
+    //ev iranc irakanacum@ karelie katarel lyambda -ov
+    //lyambdaner@ ogtagorcvumen menak functional interfaceneri het,,aveli karc syntax e;
+    //functional interface-i gaxapar@ ayna vor inq@ petqa unena mek abstract method
+    //minjev java 8 menq anpayman petqe class unenanq vor@ petqe implementacner ayd interfacen heto override aner method@
+    //heto sarqel classi object u nor kanchel objectic method@
+    //isk funqtional interfacei depqum miangamic karoxenq lyamba-i mijocov ogtagorcel method@
+
+//    public static void main(String[] args) {
+//        Runnable runnable = () -> System.out.println("thread  started");
+//        runnable.run();
+//        }
+
+    //Funqtion
+    //ays interfacen uni method vor@ uni @ndunox mek argument ev veradardznox urish argument
+    //ays interfacen karoxe gorcoxutyunner katarel orinak1
+//    public static void main(String[] args) {
+//    t-n aystex methodi @ndunox argumente
+//        Function<Integer, Integer> calculate = t -> t * 5;
+//        System.out.println(calculate.apply(4));
+//    }
+
+    //supplier  sa pastavshikne
+    //sa java 8-i meja nerkayacve functional interfacee
+    //inq@ chi @ndunum argument bayc veradardznume injvor tip;
+
+    //consumer sa clientne
+    //void e
+    //sa java 8-i meja nerkayacve functional interfacee
+    //ays interfacen uni method vor@ uni @ndunox argument ev chi veredardznum vochmi ban
+
+    //Predicaten sa tramabanakn arjeqe veradardznum
+//    public static void main(String[] args) {
+    Predicate<Integer> integerPredicate = t -> t > 10;
+//        System.out.println(integerPredicate.test(10));
+//    }
 
 
     //default forEach(Consumer consumer) method in Iterable interface;
@@ -55,46 +101,6 @@ public class Java1_8 {
     //override kannenq kanchelov orinak A.super.some() ays dzev.u arden tvyal classi mej karoxenq nuyn method@ overload anel
 
 
-    //functional interface
-    //bolor functional interfacener@ petqe unenan @FunctionalInterface anotacian
-    //yuraqanchyur interface vorn uni mek abstract method hamaravume functional interface
-    //ev iranc irakanacum@ karelie katarel lyambda -ov
-    //lyambdaner@ ogtagorcvumen menak functional interfaceneri het,,aveli karc syntax e;
-    //functional interface-i gaxapar@ ayna vor inq@ petqa unena mek abstract method
-    //minjev java 8 menq anpayman petqe class unenanq vor@ petqe implementacner ayd interfacen heto override aner method@
-    //heto sarqel classi object u nor kanchel objectic method@
-    //isk funqtional interfacei depqum miangamic karoxenq lyamba-i mijocov ogtagorcel method@
-
-//    public static void main(String[] args) {
-//        Runnable runnable = () -> System.out.println("thread  started");
-//        runnable.run();
-//        }
-
-    //Funqtion
-    //ays interfacen uni method vor@ uni @ndunox mek argument ev veradardznox urish argument
-    //ays interfacen karoxe gorcoxutyunner katarel orinak1
-//    public static void main(String[] args) {
-    //t-n aystex @ndunox argumenten
-//        Function<Integer, Integer> calculate = t -> t * 5;
-//        System.out.println(calculate.apply(5));
-//    }
-
-    //supplier  sa pastavshikne
-    //sa java 8-i meja nerkayacve functional interfacee
-    //inq@ chi @ndunum argument bayc veradardznume injov tip;
-
-    //consumer sa clientne
-    //void e
-    //sa java 8-i meja nerkayacve functional interfacee
-    //ays interfacen uni method vor@ uni @ndunox argument ev chi veredardznum vochmi ban
-
-    //Predicaten sa tramabanakn arjeqe veradardznum
-//    public static void main(String[] args) {
-        Predicate<Integer> integerPredicate = t -> t > 10;
-//        System.out.println(integerPredicate.test(10));
-//    }
-
-
     //Java Stream API
     //stexcelov mek angam stream ayn chenq karox bazmaki angam ogtagorcel
     //steram karoxenq sarqel mi qani chanaparhov
@@ -135,8 +141,8 @@ public class Java1_8 {
     //steramApi vs Collection
     //collectionner@ ogtagorcvumen stexcelu hamar injvor tiperi xmber
     //stream ner@ injvor operationneren katarum ayd xmberi het
-    //collectioni het ashxateluc menq karoxen popoxutyun katarel jnjel element orinak
-    //steramneri het ashxateluc menq chen karox jnjel injvor element
+    //collectioni het ashxateluc menq karoxen popoxutyun katarel jnjel,add anel element orinak
+    //steramneri het ashxateluc menq chen karox jnjel, kam add anel injvor element
     //collectionner@ menq karoxenq andadatar ogtagorcel.
     //streamner@ ete mek angam ogtagorcumenq inq@ asuma vor arden ogtagorcvace,
     // 2-rd angam ogtagorcelu hamar petqe nor stream stananq heto nor ogtagorcenq
@@ -228,6 +234,7 @@ public class Java1_8 {
     //What is the use of ofNullable method in Stream?
     //NullpointerExceptionic xusapelu hamar;;
     //ete streami mej lini 5000 tiv@ apa kveradardzni te qani hat ka ays tvic ete che count@ klini null
+    //ete 5000- poxaren poxancenq null menq chenq stana NullPointerException uxxaki result@ klini int isk valeun 0.
     //   int count = (int) Stream.ofNullable(5000).count();
 //    public static void main(String[] args) {
 //

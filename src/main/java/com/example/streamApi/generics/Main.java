@@ -2,6 +2,7 @@ package com.example.streamApi.generics;
 
 import com.example.streamApi.java8.diamondProblem.Dog;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -198,5 +199,39 @@ public class Main {
     //ayo da hnaravore qani vor genericner@ ihayten ekel java 5-ic;
 
     //List list = new ArrayList();//tip@ chenq asum bayc compile klini
+
+    // G   E   N   E   R   I   C
+
+
+    //What is this syntax List<?>
+    //nshanakume karoxen tal lyuboy object vori tip@ parz che
+
+
+    //What is List<Object>
+    //nshanakum e vor karoxenq lyuboy object tal qani vor lyuboy object jarangum e class Objectic
+
+    //What is the difference between List<? Extends User> and List<Object>
+    ///ays greladzev@ nshanakume vor method@ @ndunume menak User-ic extend exac classner@
+
+    //What is this syntax <? super User>
+    //nshanakume karoxen tal menak User classi superin
+
+    //GENERIC TYPES
+    //T- nshanakume vor tipe @ndunum
+    //K- nhsanakume vor KEY e, orinak HASHMAP<K,V>
+    //V- nshanakum e vor VALU e ,orinak HASHMAP<K,V>
+    //E- nshanakum e vor ELEMENT e @ndunum, orinak1 COLLECTION<E>,laynacaval ogtagorcvume Collectionnerum
+    //N- nshanakum e vor NUMBER e @ndunum
+
+
+    ///   Authentication vs. Authorization
+
+    //Authorizatian- ayn procesna erb vor sisteman access e tramadrum userin
+    //haytni methodneric JWT TOKEN@
+
+    //Authetificatin -inj vor meki nuynakanacman hastataman procesne
+    //MEK GORCONOV AUTHENTIFICATIAN -login password stugelne erb vor bazayic bervume ev hamematvume
+    //ERKU GORCONOV AUTHENTIFICATIAN - ogtatirojic pahanjvume voj miayn login passwor,ayl naev injvor ezaki texekatvutyun,
+    //orinak dproci anun,kam injvor tver uxarki @gmail-in kam heraxosahamarin
 
 }

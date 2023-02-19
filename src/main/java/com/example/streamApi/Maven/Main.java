@@ -1,82 +1,64 @@
 package com.example.streamApi.Maven;
 
-import java.util.Hashtable;
-import java.util.concurrent.ConcurrentHashMap;
-
 public class Main {
+
     //CLEAN
     //ays hraman@ jnjume bolor fayler@ voronq stexcvelen naxord build-i jamanak,
-    // target packagene jnjum vori mej jar faylern en
-
+    //target packagene jnjum vori mej jar faylern en
 
     //VALIDATE
     //stugume projecti karucvacqi chshtutyun@
 
-
     //COMPILE
-    //cod@ compile anum. .java fayler@ sarqum e .class fayl ev target package-i classes-i mej
+    //cod@ compile anum. .java fayler@ sarqum e .class fail ev pahume target package-i classes-i mej
 
     //TEST
-    //tester@ run a anum
-
+    //rune anum unit tester@
 
     //PACKAGE
     //jar faylern e sarqum ev ayn pahume target package-i meji lib package-i mej
 
-
     //VERIFY
     //stugume te project@ hamapatasxanume bolor standartnerin
 
-
     //INSTALL
-
+    //texadrume cod@ mer local maven repositoriayum
 
     //DEPLOY
-
+    //copy-e anum mer cod@ depi remote maven repository
 
     //POM
     //<groupID>..//estex nshvume projecti xmber@ orinak`  com.example..</groupID>
     //<artifactID>..//estex konkret nshvume .projecti=ojecti anun@.</artifactID>
     //groupID- i u artifactId-i het sahmanvume repository-i mej artifactori gtnvelu vayr@
 
-
     //plugin
     //pluginner@ ogtagorcvumen patrastelu jar fayler,war fayle,cod@ compile anel tester@ run anel ev ayln
 
 
-    // G   E   N   E   R   I   C
+    //LIFE-CIRCLE
+
+    //VALIDATE - Validates if the project structure is correct
+    //COMPILE - It compiles the source code and stores in the target/classes as .class fail(it is byte code)
+    //TEST - it runs the unit test
+    //INTEGRATION-TEST - It t=runs the integration test for the project
+    //VERIFY - It runs any check on results of integration test to ensure quality criteria are met
+    //INSTALLS - It installs the packaged code to the local maven repository
+    //DEPLOY - IT copies the packaged code to the remote repository
 
 
-    //What is this syntax List<?>
-    //nshanakume karoxen tal lyuboy object vori tip@ parz che
+    //REPOSITORIES
 
+    //LOCAL-REPOSITORY
+    //CENTRAL-REPOSITORY
+    //REMOTE-REPOSITORY
 
-    //What is List<Object>
-    //nshanakum e vor karoxenq lyuboy object tal qani vor lyuboy object jarangum e class Objectic
+    //LOCAL REPOSITORY-n texakayvace C:/Users/USER_NAME/.m2 directory-i mej,ays rpo-n stexcvume erb maveni 9inj vor hraman ashxatume
 
-    //What is the difference between List<? Extends User> and List<Object>
-    ///ays greladzev@ nshanakume vor method@ @ndunume menak User-ic extend exac classner@
+    //CENTRAL REPOSITORY-n texakayvace http://repo.maven.apache.org/maven2/ -um
 
-    //What is this syntax <? super User>
-    //nshanakume karoxen tal menak User classi superin
-
-    //GENERIC TYPES
-    //T- nshanakume vor tipe @ndunum
-    //K- nhsanakume vor KEY e, orinak HASHMAP<K,V>
-    //V- nshanakum e vor VALU e ,orinak HASHMAP<K,V>
-    //E- nshanakum e vor ELEMENT e @ndunum, orinak1 COLLECTION<E>,laynacaval ogtagorcvume Collectionnerum
-    //N- nshanakum e vor NUMBER e @ndunum
-
-
-    ///   Authentication vs. Authorization
-
-    //Authorizatian- ayn procesna erb vor sisteman access e tramadrum userin
-    //haytni methodneric JWT TOKEN@
-
-    //Authetificatin -inj vor meki nuynakanacman hastataman procesne
-    //MEK GORCONOV AUTHENTIFICATIAN -login password stugelne erb vor bazayic bervume ev hamematvume
-    //ERKU GORCONOV AUTHENTIFICATIAN - ogtatirojic pahanjvume voj miayn login passwor,ayl naev injvor ezaki texekatvutyun,
-    //orinak dproci anun,kam injvor tver uxarki @gmail-in kam heraxosahamarin
+    //REMOTE REPOSITORY-n menq karoxenq unenal mer remote repositoryn,
+    //orinak ete mer project@ private apa menq karoxenq stexcel mer remot repositoryn ev pahel artifact@ ayntex,vor@ hasaneli e menak mez
 
 
 }

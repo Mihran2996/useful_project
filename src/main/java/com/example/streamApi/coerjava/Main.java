@@ -3,19 +3,19 @@ package com.example.streamApi.coerjava;
 import java.util.Arrays;
 
 public class Main {
-    public static void main(String[] args) throws CloneNotSupportedException {
-        Book book = new Book("girq1");
-        Student student = new Student("valod", "valodyan", Arrays.asList("one", "two"), book);
-        System.out.println(student.getBook().getName());
-        Student clone = (Student) student.clone();
-        clone.getBook().setName("modify");
-        System.out.println(clone.getBook().getName());
-        //popoxumenq clone girqi anun@ bayc azdume student objecti Book-i vra
-        //dra hamar ir hertin Book classnel petqe realizacni clone metod@,
-        System.out.println(student.getBook().getName());
-
-
-    }
+//    public static void main(String[] args) throws CloneNotSupportedException {
+//        Book book = new Book("girq1");
+//        Student student = new Student("valod", "valodyan", Arrays.asList("one", "two"), book);
+//        System.out.println(student.getBook().getName());
+//        Student clone = (Student) student.clone();
+//        clone.getBook().setName("modify");
+//        System.out.println(clone.getBook().getName());
+//        //popoxumenq clone girqi anun@ bayc azdume student objecti Book-i vra
+//        //dra hamar ir hertin Book classnel petqe realizacni clone metod@,
+//        System.out.println(student.getBook().getName());
+//
+//
+//    }
 
     //Can interface have a field?
     //AYO EV AYD FIELD@ ARDEN ISK PUBLIC STATIC FINALE
@@ -26,6 +26,21 @@ public class Main {
     //inq@ qeshavorume ira hashcod@,
     //inq@ immutable ev apahove ete mi qani patoke ashxatum ira het,
     //inq@ qeshavorvum e string poll um
+
+
+    public static void main(String[] args) {
+        String  str = "poxos";
+
+        //concatenq anum string@ bayc hajord toxin str-n tpeluc ktpi poxos
+        System.out.println(str +" new str ");
+        System.out.println(str);
+
+        StringBuilder stringBuilder = new StringBuilder("builder");
+        System.out.println(stringBuilder);
+        System.out.println(stringBuilder.append("  new string builder"));
+        System.out.println(stringBuilder);
+
+    }
 
 
 //   How to clone an object in java? What is cloneable interface? How to make a deep copy?
