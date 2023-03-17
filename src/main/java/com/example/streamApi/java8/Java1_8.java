@@ -1,11 +1,6 @@
 package com.example.streamApi.java8;
 
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
-import java.util.function.Function;
 import java.util.function.Predicate;
-import java.util.stream.Stream;
 
 public class Java1_8 {
 
@@ -25,6 +20,9 @@ public class Java1_8 {
     //yuraqanchyur interface vorn uni mek abstract method hamaravume functional interface
     //ev iranc irakanacum@ karelie katarel lyambda -ov
     //lyambdaner@ ogtagorcvumen menak functional interfaceneri het,,aveli karc syntax e;
+    //lyambdan functional interfacei irakanacnoxne,
+    //funqtional interfacen chi karox unenal 2 abstract method,-------
+    // ------- vorovhetev irakanacumn lyambdayove ayd paragayum lyambdayov haskacnel chi lini te vor methodne mez petq ogtagorcel
     //functional interface-i gaxapar@ ayna vor inq@ petqa unena mek abstract method
     //minjev java 8 menq anpayman petqe class unenanq vor@ petqe implementacner ayd interfacen heto override aner method@
     //heto sarqel classi object u nor kanchel objectic method@
@@ -99,6 +97,7 @@ public class Java1_8 {
     //2 interfacei mej unenq nuyn anunov method,ev ayd erku interfacenel implements-a anum mi hat class
     //kunnenq compile error,,compilyator@ kstipi ovveride anel voreve mek@,vorovhetev heto parz chi lini te vor interfacei methodnenq kanchelu
     //override kannenq kanchelov orinak A.super.some() ays dzev.u arden tvyal classi mej karoxenq nuyn method@ overload anel
+    //private methodner@ voronq ekelene java 9-ic,nra hamaren vor default methodner-i mej karoxen kirarvel
 
 
     //Java Stream API
@@ -107,6 +106,8 @@ public class Java1_8 {
     //Stream.empty(); collection.stream(); Arrays.stream(array);Stream.<String>builder().add("a").build(); Stream.iterate(40, n -> n + 2).limit(20);
     //java 8-@ tyle talis sytexcel streamner primitiv tiperic,qani vor Stream@ generic e,nranq stexcel;en IntStream,DoubleStrem,LongStream interfacener@
     //ays kerp xusapelov autoBoxingic injnel drakane azdum performance-i vra
+    //terminal operationic heto stream@ pakvume ev chenq karox kanchel eli terminal operation,drahamar petqe terminalic heto kanchenq nor stream heto terminal operation
+    //cankali e vor stream@ lini  vopres veradardznox arjeq
 
 
     //PermGen vs Metaspace
@@ -117,6 +118,7 @@ public class Java1_8 {
     //What is Optional class
     //Optional@ objecti konteynera, vor@ vor karoxe ir mej pahel injpes null arjeq aynpesel voch null
     //uni aveli karch syntax,,
+    //cankalie vor optional@ lini vorpes methodi veradardznox arjeq
 
 
     //Optional.empty()-talisenq empty arjeq

@@ -57,7 +57,7 @@ public class Collection {
         //iterator@ colletion-i het ashxatume next elemntov-ov
         //listIterator@ Iteratori jarangne
         //listIteratora ashxatume ev nextov ev previous elementnerov-ov
-        //iterator@ uni hasNext,next,remove methodner@ chi karoc element add anel
+        //iterator@ uni hasNext,next,remove methodner@ chi karox element add anel
         //listIterator@ karoxe add anel elementner@
         //listIterator@ karoxe tal elementi index@
         //iterator@ karoxe ashxatekl List,Set Queue-i het
@@ -85,6 +85,7 @@ public class Collection {
 
 
         //What is Enumeration?
+        //Enumeration@ interface e
         //Karoxe kanchvel menak Vector
         //iteraciayi jamanak zugaher elmenent jnjeluc chi qcum ConcurrentModificationException.
         //Collections class@ uni enumeration() method@ vor@ andunume collectioni ev veradardznum enumuration
@@ -161,7 +162,7 @@ public class Collection {
         //Seter@ extends en anum Collection@ ev chen avelacnum nor metodner
         //lister@ toxnumen duplikat
         //lister@ extends anum Collection@ ev avelacrelen nor metodner
-        //Seter@ chunen get() method
+        //Seter@ chunen get() method,vorovhetev seter@ index chunen.
 
 
         //How do you traverse HashMap?

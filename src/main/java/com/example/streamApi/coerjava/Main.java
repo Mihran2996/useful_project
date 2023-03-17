@@ -53,6 +53,7 @@ public class Main {
 
 
     //Where are static variables stored?
+    //metaspace-um
 
 
 }
