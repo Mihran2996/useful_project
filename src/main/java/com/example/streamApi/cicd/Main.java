@@ -13,7 +13,6 @@ public class Main {
     //skzbum developer@ commit pushe anum cod@ depi git aynuhetev jenkinsi mijocov arden isk config arac
     //pipeline -i mijocov ashxatumen avtomatacvac tester@ .
 
-
     //CONTINUES DEPLOYMENT
     //sa nuyn banne inj CI-@ uxxaki verjum deploya anum depi production
     //deploy aneli depi production katarvume avtomat
