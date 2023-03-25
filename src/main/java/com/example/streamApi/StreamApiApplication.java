@@ -10,9 +10,6 @@ public class StreamApiApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(StreamApiApplication.class, args);
-
-
-
     }
 
 }
