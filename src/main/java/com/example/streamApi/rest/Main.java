@@ -79,7 +79,7 @@ public class Main {
 
     //What is a cacheable request? Which requests are cacheable?
 
-    //erb brauzeric requesta uxxarkvum server stugvuma te qeshi mej ka ayd resource-i kopian ete ka apa cache-icoe vercvum  ev
+    //erb brauzeric requesta uxxarkvum server stugvuma te qeshi mej ka ayd resource-i kopian ete ka apa cache-ice vercvum  ev
     //aveli aragacnuma performancve,,ete chka apa harcum@ gnume server ev aytexic e vercnum response
     //GET@ ev HEAD@ qeshavorvox zaprosner en
 
@@ -112,16 +112,19 @@ public class Main {
     //petqe veradardzni http response body
 
 
-    //Stateless -
+    //STATELESS
+    //ir koxmic server@ chi pahpanum injvor state clienti sessioni jamanak
+    //server@ chpetqe ogtagorci clienti state @ ir hetaqrqrutyan hamar ayd session-i jamanak
 
 
-    //3.CACHEABLE -amen request petqa parunaki informacia te ayd request@ qeshavorvuma te che
-    //client@ kveradardzni datan ir cache-ic ev kariq chi lini amen angam request uxarkel server
-    //
+    //3.CACHEABLE
+    // amen request petqa parunaki informacia te ayd request@ qeshavorvuma te che
+    //ete nshvac che apa request@ petqa qeshavorvi
 
-    //4.CLIENT-SERVER - client@ petqe pahanji resource serveric ev na kapvac che tvyalneri bazayi het
+    //4.CLIENT-SERVER
+    //petqa lini client, server,resource-ner, ev resource-ner@ petqe karavarvi HTTP -ov
     //client@ petqe chimana serveri business logikayi masin ev petqe imana menak serveri url-i masin
-    //servernel tirapetume resource-nerin ev kap chuni clienti interface-i het
+
 
     //5.LAYERED SYSTEM - tuyle talis  shertavorel hamakarg@,
     //application@ kroxe deploy line A serveri vra
@@ -130,16 +133,60 @@ public class Main {
 
 
     //6.CODE ON DEMAND - sa miak optional sahmanapakumne
+    //himnakanum server@ uxarkume clientin XML kam JSON
     //erb server@ karoxe execute linox code tramadrel clientin,javascript kam java apletner;
 
 
-    //Describe REST maturity model
+    //Describe REST maturity model    //LEVELS
     //RESTFULL Api stanalu hamar petqe pahenq Maturity model-i  bolor levelner@
     //REST maturity model@ baxkacace 4 levelic
-    //0- vorpes pratakol petqa ogtagorcvi HTTP-n,petqa unenal mek URL,ev mek method,sovorabar POST method@
-    //1- ays levelum kunenanq mi qani url tarber operationner katarelu hamar,ev bolor methodner@ klinne POST methdner
-    //2- amen HTTP request peqe lini hamapatasxan methodov, GET req-i hamar GET method,DELETE-i hamar DELETE,ev amen request petqe tramadri response code
-    //3- ays level@ ir mej nerarume bolor levelner@ ev response uxarkume naev JSON
 
+                                   //LEVEL-0
+    //LEVEL-0- vorpes pratakol petqa ogtagorcvi HTTP-n,petqa unenal mek URL,ev mek method,sovorabar POST method@
+    //CREATE : POST /api/user
+    //READ :   POST /api/user
+    //UPDATE : POST /api/user
+    //DELETE : POST /api/user
 
+                                    //LEVEL-1
+    //LEVEL-1- ays levelum kunenanq mi qani url tarber operationner katarelu hamar,ev bolor methodner@ klinne POST methodner
+    //CREATE : POST /api/users/create
+    //READ   : GET /api/users, GET /api/user/read
+    //UPDATE : POST /api/users/update
+    //DELETE : POST /api/users/delete
+    //SEARCH : GET or POST /api/users?sort=name
+
+                                    //LEVEL-2
+    //LEVEL-2- amen HTTP request peqe lini hamapatasxan methodov, ev amen request petqe tramadri response code
+    //CREATE : PUT /api/users
+    //READ   : GET /api/users/42
+    //UPDATE : POST /api/users/42
+    //DELETE : DEL /api/users/42
+    //SEARCH : GET /api/users?sort=name
+
+                                    //LEVEL-3
+    //LEVEL-3 - ays level@ ir mej nerarume bolor levelner@ ev response uxarkume naev JSON,petqe ogtagorcel hypermedia (HATEOAS)
+    //HATEOAS-@ da erb vor menq uxarkumenq tvyalner@ ev ayd tvyalneri het kapvac gorcoxutyunner@ JSONI-tesqov
+    //orinak nerqevi JSON-i mej ka tvyal ev hxumner voronq ayd tvyalneri het kapvac gorcoxutyunnern en
+    //CREATE : PUT /api/users/create
+    //READ : GET /api/users/42
+    //UPDATE : POST /api/users/42
+    //DELETE : DEL /api/users/42
+    //SEARCH : GET /api/users?sort=name
+    //
+    //Self-descriptive Response Body:
+    //HTTP/1.1 200 OK
+    //
+    //{
+    //  "_embedded" : {
+    //    "users" : [ {
+    //      "username" : "admin", ...
+    //      "_links" : {
+    //        "self" : { "href" : "http://localhost:8080/api/users/1" },
+    //        "user" : { "href" : "http://localhost:8080/api/users/1" }
+    //      }
+    //    }, {
+    //      ...
+    //    } ]
+    //  }
 }

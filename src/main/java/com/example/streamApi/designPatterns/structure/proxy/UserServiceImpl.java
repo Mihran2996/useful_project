@@ -6,6 +6,7 @@ public class UserServiceImpl implements UserService {
     //ete checked Exceptione throw linum aysinqn EXCEPTION class kam ira jarangner apa rallback chi linum
     //default transakcian rallbacka anum menak uncheked Runtime exceptionner@ ev Error ner@
     //dra hamar petqa config anel.    @Transactional(rollbackFor = Exception.class)
+    //Transakcian naev chi ashxati ete method@ public chilini,anpayman public petqe lini
 
 
     @Override

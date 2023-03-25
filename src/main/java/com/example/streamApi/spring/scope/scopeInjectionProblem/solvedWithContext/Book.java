@@ -1,4 +1,4 @@
-package com.example.streamApi.spring.scope.scopeInjectionProblem;
+package com.example.streamApi.spring.scope.scopeInjectionProblem.solvedWithContext;
 
 
 import org.springframework.context.annotation.Scope;
@@ -6,9 +6,7 @@ import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope(value ="prototype")
-//proxyMode attribute ognutyamb menq injectenq anum Prototype bean
-//@Scope(value = "prototype", proxyMode = ScopedProxyMode.TARGET_CLASS)
+@Scope("prototype")
 public class Book {
 
     private String title;

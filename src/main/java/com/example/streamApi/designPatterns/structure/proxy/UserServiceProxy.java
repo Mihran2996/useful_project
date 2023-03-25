@@ -16,7 +16,10 @@ public class UserServiceProxy implements UserService {
     @Override
     public void update() {
         //transactional.start()
-        System.out.println("User Created");
+        if (userService == null) {
+            userService = new UserServiceImpl();
+        }
+        userService.update();
         //transactional.commit()
     }
 }

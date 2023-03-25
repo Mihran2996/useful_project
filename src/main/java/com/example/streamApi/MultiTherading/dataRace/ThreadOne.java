@@ -9,6 +9,7 @@ public class ThreadOne implements Runnable {
 
     @Override
     public void run() {
+        System.out.println("Thread--1");
         example.incrementInteger();
         example.getInteger();
     }

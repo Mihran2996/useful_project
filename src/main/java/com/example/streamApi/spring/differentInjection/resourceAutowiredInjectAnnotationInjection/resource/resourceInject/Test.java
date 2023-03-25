@@ -7,7 +7,7 @@ public class Test {
 
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
         AnimalKeeper animalKeeper = context.getBean(AnimalKeeper.class);
-        animalKeeper.getAnimal().type();
+        animalKeeper.getTiger().type();
         context.close();
     }
 }

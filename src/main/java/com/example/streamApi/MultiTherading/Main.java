@@ -1,9 +1,8 @@
 package com.example.streamApi.MultiTherading;
 
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Main {
 
@@ -17,16 +16,15 @@ public class Main {
         //WAITING state erb kanchumenq,wait,sleep() methodner@
         //TIMEWAITING state erb kanchumenq wait@ ev sleep@ jamanakov;
         //BLOKED state erb synchronized e,spasuem monitorin
-        //TERMINATED erb thread@ avartele ashxatanq@
+        //TERMINATED erb thread@ avartele ashxatanq@ kam erb interapt e exel
 
 
         //NEW stateic karoxe gnal RUNNABLE vichak erb kanchumenq start() method@
-        //NEW stateic karoxe gnale TERMINATED vichak erb Exception e qcum
 
         //RUNNABLE stateic karoxe gnal RUNNING vichak erb kanchumenq run() method@
 
         //RUNNING stateic karoxe gnale WAITING vichak erb kanchumenq wait,sleep() methodner@
-        //RUNNING stateic karoxe gnal TERMINATED vichak erb avartele ir ashxatanq@
+        //RUNNING stateic karoxe gnal TERMINATED vichak erb kanchvele run() method@ kam exception e qcel.
         //RUNNING stateic karoxe gnal RUNNABLE vichak erb kanchvele yield() method@
 
         //WAITING stateic karoxe gnal RUNNABLE vijak erb kanchvele notify,notifyAll() methodner@
@@ -37,7 +35,7 @@ public class Main {
         //What are the methods of Thread class? Describe them in detail
 
         //getState() veradardznume tvyal threadei staten
-        //isAlive() veradardznume true kam false ete thread@ RUNNABLE statem egtnvum,
+        //isAlive() veradardznume true kam false ete thread@ RUNNABLE statem egtnvum, ete thread@ kendanie
         //setName() talisenq anunn
         //getName() vercnumenq threadei anun@
         //join() spasume minjev thread@ avarti ashxatanq@
@@ -76,12 +74,11 @@ public class Main {
         //Callebl@ nynpes funqtional interface e,
         //Callebl@ uni mek call() method@ vor@ veradardznume Object,isk Rubnnable uni void run()method@
         //Callable-i call() method@ throws e anum exception
+        //Runable-i run method@ chi qcum exception
+        //Callabl@ java.util.concurrent package-i meje
+        //Runable@ java.lang package-i meje
         CallableImpl callable = new CallableImpl();
         //new Thread(callable).start(); kunenanq ClassCastException vorovhetev Callablen run chi linum Threadov
-
-        //What is Executor
-        //Executor uni mek execute method@
-        //execute method@ vor@ @ndunume Runnable-i ekzemplyar ahsxatacnume Runnable-i run method@
 
 
         //What is Executors
@@ -89,26 +86,32 @@ public class Main {
         //uni newFixedThreadPool(int size).ays methodov sarqume size chapov pool
         //newSingleThreadPool()-sarqume mek pool
         //newCachedThreadPool()-naxnakan ksaqri 0
+        //newCachedThreadPool() ays method@ naxnakan ksarqi pool@ 0;sa aveli lavacnume performanc@ stexcume threadner @ast anhrajeshtutyan,ev naxkinum stexcac threadner@ voronq vor hasnaelien ogtagorcvumen
+        //newCachedThreadPool()-i depqum ayn threadner@ voronq vor chen ogtagorcvum 60 varkayic aveli jnjvac klinen
         //Executors@ veradardznume ThreadPoolExecutor,vornel implementacnume ExecutorServicen interfacen
         //Executor interfacen uni mek Execute() method@,vor@ rune anum Runnablei run() method@
 
+
+        //What is Executor
+        //Executor uni mek execute method@
+        //execute method@ vor@ @ndunume Runnable-i ekzemplyar ahsxatacnume Runnable-i run method@
+
+
         //What is a thread pool?
+        //ThreadPoolExecutor implementacnume ExecutorServic-in
         //Thread pool@ ogtagorcum-e anum naxqinum stexcvac patokner@ current tasker@ katarelu hamar
         //1-in hertin stexcvuma task@
-        //2-rd hertin stexcvume TheradPoll@
+        //2-rd hertin stexcvume TheradPool@
         //3-rd hertin tasker@ talisenq Executor Poolin
         //threadPoll@ stexcelu hamar kanchumenq Executors i newFixedThreadPool@ talisenq chap,te qani thread karoxe parunakel pool@
         //Executors-i newFixedThreadPool@ mez veradardznume ThreadPoolExecutor,vornnel uni execute method@ qani vor ExecutorServicne realizacnum
         //newFixedThreadPool(3) stexcume pooli chap@ aysinqN 3 hat threade karox pahvel pooli mej
         //shat threadner sarqel ev chogtagorcel@ kazdi performance-i vra
         //dra hamar ka newCachedThreadPool() method@ vor@ naxnakan sarqume pool@ 0
-        //newCachedThreadPool() ays method@ naxnakan ksarqi pool@ 0;
+        //newCachedThreadPool() ays method@ naxnakan ksarqi pool@ 0;sa aveli lavacnume performanc@ stexcume threadner @ast anhrajeshtutyan,ev naxkinum stexcac threadner@ voronq vor hasnaelien ogtagorcvumen
+        //newCachedThreadPool()-i depqum ayn threadner@ voronq vor chen ogtagorcvum 60 varkayic aveli jnjvac klinen
         //heto sarqume pooli mej patok erb vor pool.execute(Runnable runnable) method@ kanchvume
         //newSingleThreadPool();//ays method@ stexcume mek patok pooli hamar
-
-
-
-
 
 
 
@@ -120,20 +123,20 @@ public class Main {
         //ExecuteService.submit (Runable runable)  katarume task@ Runablei hamar
         //ExecuteService.submit (Callable callable)  katarume task@ Callable hamar
         // irakanum submit(Callable callable)-takic kanchume Executor-i execute method@
-        //erb kanchumenq submit@ ExecutorAdapterService-i submit methodne kanchvum vor@ vercnume Callablen dardznum Runnable ev kanchum Executori execut@(Runnable)
+        //erb kanchumenq submit@ methodne vor@ vercnume Callablen dardznum Runnable ev kanchum Executori execut@(Runnable)
         //ExecuteService.invokeAny (Collection<? Callable callable>)  katarume task@ Callable-neri listi hamar
         //ExecuteService.invokeAll (Collection<? Callable callable>)  katarume task@ Callable-neri listi hamar
-
         //execute(Runnable)-sa @ndunume Runnable ev kanchume nra run method@
         //submit(Runnable)-sa nynpes @ndunume Runable bayc verdardznume Future object
         // karoxenq future-ic kanchel get method@ kveradardzni 0 ete ashxatanq@ normal avartvele
-        //submit(Callable)-veredardznume future object,irakanum klanchvume Executori execute() method@,
-        //invokeAny(Collection<? Callable>)-sa @ndunume Callable-i list, chi veradardznum Future object aylmethod@ verdardznume
-        // avratvac taski result@,evgaranciya chka te vor mekin@
+        //submit(Callable)-veredardznume future object,irakanum kaanchvume Executori execute() method@,
+        //invokeAny(Collection<? Callable>)-sa @ndunume Callable-i list, chi veradardznum Future object ayl method@ verdardznume
+        // avratvac taski result@, ev garanciya chka te vor mekin@
         //ete veradardzrec result@ mnacac tasker@ kdadadaren ashxatel,ete ashxatanqi jamanak exception qcec eli kdadadaren ashxatel
 
         //what is ThreadLocal
-        //ThreadLocal@ nerkayacnume iranic threadi local popoxakan;
+        //ThreadLocal@ nerkayacnume iranic threadi local popoxakan;Vor@ hasanaeli e hatuk Threadi hamar
+        //Threadlocal@ objecte vor uni ir mej nerdrvac ThreadLocalMap class,ev erb get enq anum inq@ valuen veradardznume mapic.erb set enq anum mapi key@ linume currentThread@
         //sa mez tuyle talis stexcel popoxakanner voronq karoxen get() kam set() linen nuyn threadi mej;
         //ete 2 thread unen dostup nuyn kodi vra vornel uni ThreadLocali hasce,apa erlku threadnernel chen karox tesnel local popoxakan@ mek@ myusi hamar
 
@@ -151,7 +154,11 @@ public class Main {
 
 
         //What is a daemon thread?
-        //ays threadner@ aveli qich prioritet unecox threadnernen,
+
+        //javan tramadryme 2 tesaki threadner `  User thread, Daemon thread.
+        //User threadner@ unen bardzr preoritet
+        //Jvm @ spasuem minjev User thread@ avarti ashxatanq@ nor terminate kani
+        //Daemon threadner@ aveli qich prioritet unecox threadnernen,
         //injpoisine orinak garbarje collection-ov zbaxvox thread@
         //karch asac iranq carayutyunner e matucum user threadnerin
         //nra kyanq@ kaxvace userThreadi kyanqic ete userThread@ mahanume JVM@ avtomat avartume DaemonThreadner@
@@ -161,6 +168,7 @@ public class Main {
 
         //What is a data race?
         //erbvor mi thread mi resource-@ karduma isk myus thread@ ayd pahin popoxutyuna  anum.
+        //staccvuma vor mi qani thread ashxatumenq mek nuyn resource-i het ev chen tesnum nra irakan arjeq@
 
 
         //What does volatile keyword do?
@@ -172,6 +180,8 @@ public class Main {
 
 
         //synchronized vs Volatile
+        //volatilen keyworde
+        //synchronized blocke anum instanc@ kam method@
         //volatile-i depqum threadner@ himnakan memory-ic en kardum arjeq@
         //synchronized-i depqum amen thread erb mtnume synchronized block nax tarmacnumen irenc arjeq@ himnakan memory-ic
         //blockic elneliuc arajel verdardznum enc irenc arjeq@ himnakan memory
@@ -186,32 +196,34 @@ public class Main {
 
 
         // What are some ways to implement mutex(Mutual Section) in Java?
+        //en vor miyn mek thread kam process karoxe ayd pahin gorc anel codi hatvaci het
         //arajin@ vor karoxenq resource-n haytararel synchronized
         //erkrord@ vor karoxenq resource pahel synchronized blocki mej
         //karoxenq patrastel  new ReentrantLock() object vor@ realizacnume Lock interfacen object override anel getNextSequence()-@;
         //karoxenq patrastel  new Semaphore() object override anel getNextSequence()-@;
+        //Semaphore-@ sahmanapakume threadneri qanak@ tvyal pahin file het gorc anelis,orinak lim@ 10 karoxe linel ev dranic avel thread chi karox miajamanak gorc anel filei het
         //karoxenq patrastel  new Monitor() object override anel getNextSequence()-@;
-
 
         //What is an atomic variable?
         //sa concurrent package-i meja
+        //atomicneri mej currentvaluen haytararvace vorpes volatile, orinak atomicinteger@
+        //aveli lava ogtagorcel atomic qan synchronized vororvhetev synchronized@ azdume performancei vra
         //apahova sinxron ashxatanq@ popoxakani het
         //ete erku thread gorcen anum nuyn resource-i het,apa naxqan popoxel@ nax kardumen ,heto popoxum,heto save anum
         //aypisov myus threadnele nuyn gorcoxutyun@ anum ev resouce-i arjeq@ chishta stexcvum
 
 
         //What is an intrinsic lock?
-        //ays interfacei realizacianeric mek@ ReentrantLock classne vor@ apahovume sinxron ashxatan
+
 
 
         //ReentrantLock, the differene with synchronized blocks
-
-        //Thread@ block anelu hamar ReentrantLock@ ogtagorcume lock() method@
-        //blockic hanelu hamar ReentrantLock() ogtagorcume unLock() method@
-        //ReentrantLock() i jamanak thread@ blockixc duse galic cankacac kargov
-        //synchronized haytararelov blockenq anum thread@;
-        //synchronized-ic blockic helnel@ katarvume anuxxakioren
-        //synchronized-i jamanak thread@ blockic duse galis ayn hertakanutyamb injov vor block state-um e haytnvel
+        //synchronized@ chi apahovum injvor hertakanutyun ev voreve objecti durs galuc heto amen object karoxe vercnel blakirovken
+        //synchronized-i depqum thread@ karoxe vercnel blokirovken mek angam
+        //reentrantLook i depqum Thread@ karoxe bazmaki angam mtnel blokirovka ev da hangecnume starvation xndrin
+        //Thread@ block anelu hamar ReentrantLock@ ogtagorcume lock() method@ ev hashvich@ mecanum e mek ov
+        //blockic hanelu hamar ReentrantLock() ogtagorcume unLock() method@ ev hashvich@ pakasum e mekov
+        //erb hashvich@ havasare 0-i inq@ azatume blokirovken
 
         //What is a deadlock?
         //sa ayn depqne erb erku kam aveli threadner blocken exel bayc anverj spasumen mimyanc notify()-i hamar
@@ -225,7 +237,15 @@ public class Main {
         //hachaxe ogtagorcum ayd resourcen ev arajin threadnel shut shute @nknum waiting vijaki mej
 
 
+        //What is CountDownLatch
+        //Ays class@ nerkayacvele java 1.5-ic
+        //ays class@ ogtagorcvume vstah linelu hamar vor task@ spasume mnacac threadnerin ir ashxatanq@ skseluc araj
+        //thread@ kspasi enqan minjev injvor event start lini .
+        //patkeracnenq vor main thread@ petqe start lini miayn ayn depqum erb bolor servicener@ patrast en
+        //methods of CountDownLatch
+        //CountDownLatch-i constructor@ partadir @ndunume int count, da eventneri qanakne
+        //cutDown() method@ decrimenta anum count@ ev erb ayn havasarvume 0-i apa glxavor thread@ durse galis blockic
+        //await () method@ glxavor thread@ qcume blocki mej ev minjev count@ chhavasarvi 0-i unblock chi lini glxavor thread@
     }
-
 
 }
