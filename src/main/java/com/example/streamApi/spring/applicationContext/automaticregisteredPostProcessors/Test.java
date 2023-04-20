@@ -12,9 +12,9 @@ public class Test {
 
         ClassPathResource classPathResource = new ClassPathResource("processors.xml");
         XmlBeanFactory xmlBeanFactory = new XmlBeanFactory(classPathResource);
+
         CostumerBeanFactoryPostProcessor costumerBeanFactoryPostProcessor
                 = (CostumerBeanFactoryPostProcessor) xmlBeanFactory.getBean("costumerBeanFactoryPostProcessor");
-
         CostumerBeanPostProcessor costumerBeanPostProcessor
                 = (CostumerBeanPostProcessor) xmlBeanFactory.getBean("costumerBeanPostProcessor");
 
@@ -24,9 +24,9 @@ public class Test {
         System.out.println("application contextov beaner@ avtomaten registracia arvum");
 
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("processors.xml");
+
         CostumerBeanFactoryPostProcessor costumerBeanFactoryPostProcessor1
                 = (CostumerBeanFactoryPostProcessor) context.getBean("costumerBeanFactoryPostProcessor");
-
         CostumerBeanPostProcessor costumerBeanPostProcessor1
                 = (CostumerBeanPostProcessor) context.getBean("costumerBeanPostProcessor");
 

@@ -1,6 +1,10 @@
 package com.example.streamApi.exception.reThrowing;
 
-import java.sql.SQLException;
+
+import com.example.streamApi.comparatorAndComparable.ComparableExample.User;
+
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Example {
 
@@ -13,22 +17,22 @@ public class Example {
         //npatak@ aveli bardzr makardakum handle enelne
 
 
-        try {
-            userStoredService();
-        } catch (UserNotStoredException e) {
-            System.out.println(e.getMessage());
-        }
-    }
-
-    public static void userStoredService() throws UserNotStoredException {
-
-        try {
-            //execute SQL statements.
-            //trying to store user in database we got SqlException
-            throw new SQLException();
-        } catch (Exception e) {
-            throw new UserNotStoredException("During save operation something went wrong");
-        }
+//        try {
+//            userStoredService();
+//        } catch (UserNotStoredException e) {
+//            System.out.println(e.getMessage());
+//        }
+//    }
+//
+//    public static void userStoredService() throws UserNotStoredException {
+//
+//        try {
+//            //execute SQL statements.
+//            //trying to store user in database we got SqlException
+//            throw new SQLException();
+//        } catch (Exception e) {
+//            throw new UserNotStoredException("During save operation something went wrong");
+//        }
     }
 
 }

@@ -1,4 +1,4 @@
-package com.example.streamApi.spring.circularDependency;
+package com.example.streamApi.spring.applicationContext.circularDependency;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

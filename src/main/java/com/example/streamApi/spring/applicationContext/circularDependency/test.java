@@ -1,4 +1,4 @@
-package com.example.streamApi.spring.circularDependency;
+package com.example.streamApi.spring.applicationContext.circularDependency;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

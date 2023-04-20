@@ -41,11 +41,12 @@ public class Example {
 
         //Stream-i operationner@ linumen terminal ev intermediate,
         //Intermediate operationner@ Lazy-en,nranq execute chen linum minjev chi kanchvum terminal operation@
-        //terminal operationic hetpo chenq karox kanchel intermediate operation
+        //terminal operationic heto chenq karox kanchel intermediate operation
         //terminal operationic heto stream@ pakvume ev chenq karox kanchel eli terminal operation,drahamar petqe terminalic heto kanchenq nor stream heto terminal operation
         //intermediate operationner@ injvor result chen veradardznum nranq uxxaki stream@ transferen anum mek urish streami
         //terminal operationner@ veradardznumen result
         //Terminal operationner@ eager en
+        //Streamner@ ashxatelov collectioni het chen popoxutum collection@
 
 
         //Stream methods
@@ -179,7 +180,5 @@ public class Example {
         multipleStream.parallelStream().forEachOrdered(System.out::print);
         long end2 = System.currentTimeMillis();
         System.out.println(end2 - start2);
-
-
     }
 }

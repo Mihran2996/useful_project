@@ -8,7 +8,7 @@ public class Main {
     //ev menq inject enq anum interfacei anunov vren avelacnumenq @Qualifier anotacion
     //ira mej mutqagrelov inject linox classi anun@ vorpeszi konflict chta
 
-    // @Value what does it do?
+    //@Value what does it do?
     //Ays anotacian ogtagorcvume tvyal parametrin talov default value
     //karoxenq menq tal value ev ayn karoxe properties fayli mejic verdzni valuen
     //karoxen dnel fieldi vra,setteri ev constructori vra ev karoxe linel @ndunvox argument

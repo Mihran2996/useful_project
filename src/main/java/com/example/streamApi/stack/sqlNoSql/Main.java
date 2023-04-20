@@ -10,7 +10,7 @@ public class Main {
     //Does Graph NoSQL datbases support ACID?
     //Graph databasen da ayne erb dataner@ haxordakcvumen irar het hanguycnerov
     //support anumen ACID-@
-    //Graph database ner@ dranq NoSql databasanernen2,iranq hamarvumen nonrelation databasaner
+    //Graph database ner@ dranq NoSql databasanernen,iranq hamarvumen nonrelation databasaner
     //Sql database ner@ relation en
     //Sql database ner@ datan pahume table nerov
     //NosSql@ pahume dokumenti teskov,kam key valueov orinak mongoDB-jsona pahum,Redis@ key-valueov

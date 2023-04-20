@@ -56,4 +56,14 @@ public class Student implements Cloneable {
     public void setBook(Book book) {
         this.book = book;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", anyList=" + anyList +
+                ", book=" + book +
+                '}';
+    }
 }

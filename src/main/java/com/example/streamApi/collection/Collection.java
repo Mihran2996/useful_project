@@ -59,7 +59,7 @@ public class Collection {
         //listIteratora ashxatume ev nextov ev previous elementnerov-ov
         //iterator@ uni hasNext,next,remove methodner@ chi karox element add anel
         //listIterator@ karoxe add anel elementner@
-        //listIterator@ karoxe tal elementi index@
+        //listIterator@ karoxe veradardznel  elementi index@
         //iterator@ karoxe ashxatekl List,Set Queue-i het
         //ListIterator@ karoxe ashxatel menak Listeri het
 
@@ -131,7 +131,7 @@ public class Collection {
         System.out.println();
 
 
-        //linkedhashset-i mej karoxenq null value avelacnenq,,mek hat,injqanel avelacnenq inq@ override
+        //linkedhashset-i mej karoxenq null value avelacnenq,,mek hat,injqanel avelacnenq inq@ override kani
         LinkedHashSet<Integer> linkedHashSet = new LinkedHashSet<>();
         linkedHashSet.add(1);
         linkedHashSet.add(2);
@@ -200,7 +200,6 @@ public class Collection {
 
         Hashtable<Integer, String> hashtable = new Hashtable<>();
 
-
         //ConcurrentHashMap vs hashtable
         //cuncurrenthashmap@ tuyle talis null key ev value
         //erkusi hamarel iterator@ fail-safe,
@@ -257,6 +256,7 @@ public class Collection {
         List<String> al2 =
                 new ArrayList<String>(Arrays.asList(geeks));
         System.out.println(al2);
+
 
 
     }

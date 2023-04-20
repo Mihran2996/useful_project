@@ -2,6 +2,12 @@ package com.example.streamApi.exception;
 
 public class Main {
 
+    //Whay we need EXCEPTION
+    //Exception handle-ing@ ogtagorcvume apahovelu hamar  vor cragir@ ktruk chdadarecvi.
+    //ete mej try/catch chenq ogtagorcum ev orinak cragir@ uzume gtneol fail ev fail@ chka apa ayn chgiti te injpese kang arnelu ev kngni anverj cikli mej.
+    //isk ete try/catchov brnenq handle kanenq..
+
+
     //What is exception rethrowing?
     //erbemn mez petqe rethrow anenq Exception@
     //linuma depq erv Catch block@ chi karox handle ene exception@ ev menqa karoxenq catch blocki mejic throw anel

@@ -68,7 +68,7 @@ public class Main {
         new Thread(() -> new RunnableImpl().run()).start();
 
 
-//        Callable vs Runnable
+//       Callable vs Runnable
         //Runable-i ekxemplyar@ karoxe execute linel ev Threadov ev ExecutorService-ov
         //Callable-n karoxe menak execute linel ExecutorServiceov;
         //Callebl@ nynpes funqtional interface e,

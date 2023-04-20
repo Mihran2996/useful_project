@@ -4,6 +4,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Task2Demo {
+
     //ThreadPoolExecutor implementacnume ExecutorServic-in
     //Thread pool@ ogtagorcum-e anum naxqinum stexcvac patokner@ current tasker@ katarelu hamar
     //1-in hertin stexcvuma task@

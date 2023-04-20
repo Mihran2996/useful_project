@@ -5,8 +5,9 @@ public class Main {
     //What are the different features of Spring Framework?
 
     //IOC CONTAINER
-    //sa Springi himnakan hatkanishneric mekne vpr@ kargavorume java objectner@ ev patasxanatu e nranc life-circle hmaar
+    //sa Springi himnakan hatkanishneric mekne vor@ kargavorume java objectner@ ev patasxanatu e nranc life-circle hmaar
     //IOC-@ ogtagorcume DI- shablon@ beaner@ stexcelu hamar
+    //beaner-i masin informacion IOC-@ stanume XML faylic, Annotation-neric kam java codeic
 
     //MVC FRAMEWORK
     //TRANSACTION MANAGEMENT
@@ -42,7 +43,6 @@ public class Main {
     //IOC-@ tramadrume erku tesaki containerne BEANFACTORY ev APPLICATIONCONTEXT
 
     //Differentiate between BeanFactory and ApplicationContext
-
 
     //ApplicationContext@ handisanume BeanFactory-i jarang
     //BEANFACTORY-n LAZY e,inq@ bean@ sarqume en jamanak erb kanchumenq context.getBean(beanName)
@@ -86,8 +86,8 @@ public class Main {
 
 
     //What is Autowiring in Spring?
-    //Spring@ tramadrume chaparh vor@ avtomat kerpov karoxe bacahaytel tarber bean-eri mijev exac relationship@
-    //ays ameninj@ kareli anel haytararelov bolor bean@ xml faylum
+    //Spring@ tramadrume chanaparh vor@ avtomat kerpov karoxe bacahaytel tarber bean-eri mijev exac relationship@
+    //ays ameninj@ kareli anel haytararelov bolor bean-er@ xml faylum
     //autowiring @ uni 5 rejim
     //NO-  erb autowired chka,deafult sae
     //BYNAME- ays paragayum inject arvume setteri mijocov ev beani id-n ev ref-@ petqe nuyn@ lini
@@ -105,6 +105,7 @@ public class Main {
     //CGLB-i depqun qani angamel kanchvi method@ menak arajin angam kstecvi bean,
     // mnacac kancher@ uxxaki containeric kveradardznen goyutyun unecox bean@
     //ete bean veradardznox method@ statice apa aydex proxy-n chi gorci
+    //ete cklass@ uni mek kam avel implements arac interface apa proxy-n kstexcvi DYNAMIC PROXY tarberakov
     //DYNAMIC PROXY -n stexcvume implementacnelov target classi impelent arac interfacener@
 
 

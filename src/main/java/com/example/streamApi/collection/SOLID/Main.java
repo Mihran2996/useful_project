@@ -1,4 +1,4 @@
-package com.example.streamApi.SOLID;
+package com.example.streamApi.collection.SOLID;
 
 public class Main {
 

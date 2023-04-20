@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         //Iteratorner@ linumen erku tesaki1 Fail Fast ev Fail Safe
-        //Fail Fast iterator@ iteraciayi jamanak erb pordzenq mofify anenq injvor element kunenanq ConcurrentModificationException
+        //Fail Fast iterator@ iteraciayi jamanak erb pordzenq modify anenq injvor element kunenanq ConcurrentModificationException
         //Fail Fast iterat@ uni modCount field  vor@ cuyce talis colection@ element@ popoxvace te che,ete popoxvace u menq modify enq anum element@ apa kunenanq exception@
         //Fail Safe i jamank menq chenq unena ayd exception@ ayn kpordzi hnaravorins efektiv popoxel object@ xusapelov exceptionic
         //Fail Safe chi qcum exception qani vor popoxutyunner@ katarvum en collection@ copy-i vra,original object@ mnum e anpopox

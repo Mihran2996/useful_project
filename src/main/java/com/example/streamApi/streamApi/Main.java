@@ -14,22 +14,28 @@ public class Main {
     //map
 
 
-//    public static void main(String[] args) {
-//        List<Integer> integers = Arrays.asList(1, 8, 2, 6, 9);
-//        integers.stream().filter(
-//                element -> (element % 2 == 0)
-//        ).forEach(System.out::print);
-//        System.out.println();
-//
-//        //stream operation@ chi popoxum collection@
-//        //hamozvelu hamar tpumenq u tesnum vor arjeqner@ pahpanvelen
-//        for (Integer integer : integers) {
-//            System.out.print(integer);
-//        }
-//        System.out.println();
-//        //karoxenq sortavorel
-//        integers.stream().sorted().forEach(System.out::print);
-//    }
+    public static void main(String[] args) {
+        List<Integer> integers = Arrays.asList(1, 8, 2, 6, 9);
+        integers.stream().filter(
+                element -> (element % 2 == 0)
+        ).forEach(System.out::print);
+        System.out.println();
+
+        //stream operation@ chi popoxum collection@
+        //hamozvelu hamar tpumenq u tesnum vor arjeqner@ pahpanvelen
+        for (Integer integer : integers) {
+            System.out.print(integer);
+        }
+        System.out.println();
+        //karoxenq sortavorel
+        integers.stream().sorted().forEach(System.out::print);
+        System.out.println();
+
+        //sortavoreluc heto tpumenq ev tesnumenq vor stream@ popoxutyun chi katarum collecti het
+        for (Integer integer : integers) {
+            System.out.print(integer);
+        }
+    }
 
     //what is ForkJoin
     //ForkJoin@ javayum ogtagorcvume aveli efetkit ashxatanqi hamar
@@ -47,19 +53,19 @@ public class Main {
     //sequaential stream@ ashxatume elementneri het hajordabar pahelov hajordakanutyun@
     //paralel stream masiv@ bajanume maseri
 
-    public static void main(String[] args) {
-        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
-
-        Stream<Integer> stream = list.stream();
-        //cuyc kta vor main threadne ashxatum aysinq mi threadove ashxatum
-        stream.forEach(s -> System.out.println(s + " " + Thread.currentThread().getName()));
-
-        System.out.println();
-        Stream<Integer> parallelStream = list.parallelStream();
-
-        //cuyc kta ayn threadneri anunner@ voronq vor ashxatumen ira het
-        parallelStream.forEach(s -> System.out.println(s + " " + Thread.currentThread().getName()));
-
-
-    }
+//    public static void main(String[] args) {
+//        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+//
+//        Stream<Integer> stream = list.stream();
+//        //cuyc kta vor main threadne ashxatum aysinq mi threadove ashxatum
+//        stream.forEach(s -> System.out.println(s + " " + Thread.currentThread().getName()));
+//
+//        System.out.println();
+//        Stream<Integer> parallelStream = list.parallelStream();
+//
+//        //cuyc kta ayn threadneri anunner@ voronq vor ashxatumen ira het
+//        parallelStream.forEach(s -> System.out.println(s + " " + Thread.currentThread().getName()));
+//
+//
+//    }
 }
