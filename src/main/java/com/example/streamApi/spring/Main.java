@@ -83,6 +83,7 @@ public class Main {
     //ete menq ogtagorcumenq erku tesaknel inject anelu hamar apa IOC container@ kogtagorci setter injection vorovhetev constructoric heto ashxaatume setter method@
     //menq garancia chunenq vor setter injection@ inject kani bean@
     //myus koxmic constructor injection@ minjev chpatrasti dependence-ner@ chi ta mez patrasti object@
+    //aysinqn ete mez petqe vstah linel vor object@ patrastvele ev nra dependence-ner@ nuynpes patrastvelen apa kogtagorcenq  CONSTRUCTOR
 
 
     //What is Autowiring in Spring?

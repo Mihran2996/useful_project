@@ -17,7 +17,7 @@ public class Main {
         System.out.println(Employee.isIsBeanInstantiated());
         Employee employee1 = (Employee) xmlBeanFactory.getBean("employee");
 
-        //es phin kkancvi postConstruct() method@ qani vor ayn bean@ stexcveluc araje kanchvum
+        //es pahin kkancvi postConstruct() method@ qani vor ayn bean@ stexcveluc araje kanchvum
         //ktpi true vorovhetev bean@ sarqele
         System.out.println(employee1.isIsBeanInstantiated());
     }

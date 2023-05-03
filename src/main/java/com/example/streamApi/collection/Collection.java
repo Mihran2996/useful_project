@@ -258,6 +258,19 @@ public class Collection {
         System.out.println(al2);
 
 
+        //ABSTRACT class VS INTERFACE
+        //ete mez petqe vor class@ unena injvor behavior menq kstexcenq Interface ev implements kanenq
+        //ete mez petqe vor mer class@ @ndlaynvi ev nor hnaravorutyunner trvi menq kstexcenq Abstract class
+        //orinak ete uzenanq stexcenq Exception-neri hirarxia,
+
+
+        //Why the methd main() is STATIC
+        //JVM@ chi karox patrastel classi instance chkanchelov nra consttor@
+        //ete tekuz jvm-@ kanchi default constructor apa class@ chpetqe lini ABSTARCT
+        //ete tekuz class@ abstracte apa JVM-@ chgidi te inj argumentner petqa poxnci main methodin
+        //hakarak depqum instance chi karoxana sarqel
+        //ays ameninj@ chbardzacnelu hamar uxxaki method main() a statice
+
 
     }
 }

@@ -93,7 +93,7 @@ public class Main {
     //ayn eji path@ vortexic request@ ekele
 
 
-    //Rsponcse headerumel erevuma orinak ardyunq@ orinak 200ok
+    //REsponcse headerumel erevuma orinak ardyunq@ orinak 200ok
 
     //What is cookie
     //Cookie-ner@ text fayleren voronq pahumen tvyalneri poqr hatvac`orinak useri anun ev password
@@ -122,12 +122,12 @@ public class Main {
     //ete nshvac che apa request@ petqa qeshavorvi
 
     //4.CLIENT-SERVER
-    //petqa lini client, server,resource-ner, ev resource-ner@ petqe karavarvi HTTP -ov
+    //petqa lini client, server,resource-ner, ev resource-ner@ petqe kaTavarvi HTTP -ov
     //client@ petqe chimana serveri business logikayi masin ev petqe imana menak serveri url-i masin
 
 
     //5.LAYERED SYSTEM - tuyle talis  shertavorel hamakarg@,
-    //application@ kroxe deploy line A serveri vra
+    //application@ karoxe deploy line A serveri vra
     //Databasen karoxe linel B serveri vra
     //Authenticate servernel karoxe linel C serveri vra
 
@@ -142,7 +142,7 @@ public class Main {
     //REST maturity model@ baxkacace 4 levelic
 
                                    //LEVEL-0
-    //LEVEL-0- vorpes pratakol petqa ogtagorcvi HTTP-n,petqa unenal mek URL,ev mek method,sovorabar POST method@
+    //LEVEL-0- vorpes pratakol petqa ogtagorcvi HTTP-n,petqa unenal mek URL,Url-um chpetqa ogtagocvi underscore (_), ayl -,kogtagorcven naev lowerCase, ev mek method,sovorabar POST method@
     //CREATE : POST /api/user
     //READ :   POST /api/user
     //UPDATE : POST /api/user

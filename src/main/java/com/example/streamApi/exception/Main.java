@@ -8,6 +8,19 @@ public class Main {
     //isk ete try/catchov brnenq handle kanenq..
 
 
+    //Checked vs Unchecked
+    //Checked exceptionner@ stupumen compile time handle anel
+    //Unchecked exceptionner@ RunTimeException nernen voronq runtime en patahum
+    //checked exceptionner@ stexcumen ete cragir@ gorce anum drsi resursneri het, orinak,fayleri, sqli het ev ayln,
+    //unchecked exceptionner@ kapvacen cragri logikayi het.
+
+    //Error vs Exception
+    //erronr@ patahumen himnakanum resource-i pakasutyan depqum run time state um
+    //errorner@ java.lang.error package-um en
+    //errorner@ chpetqe recover linen try/catch ov
+    //compilyator@ chgiti errori masin
+    //himnakanum error@ paymanavorvace ayn environment e het inum vor rune exac application@
+
     //What is exception rethrowing?
     //erbemn mez petqe rethrow anenq Exception@
     //linuma depq erv Catch block@ chi karox handle ene exception@ ev menqa karoxenq catch blocki mejic throw anel
@@ -38,7 +51,9 @@ public class Main {
 
     public static void main(String[] args) {
 //        System.out.println(getEx().getCause());
-        System.out.println(getEx().getMessage());
+//        System.out.println(getEx().getMessage());
+        getErr();
+        System.out.println("after error");
     }
 
     public static Exception getEx() {
@@ -53,6 +68,16 @@ public class Main {
         } catch (ArithmeticException e) {
             // Getting the actual cause of the exception
             throw e;
+        }
+    }
+
+    public static void getErr(){
+        try{
+            throw new OutOfMemoryError();
+        }catch (OutOfMemoryError error){
+            System.out.println("Cough the error");
+        }finally {
+            System.out.println("Finally block");
         }
     }
 

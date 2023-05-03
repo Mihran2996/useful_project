@@ -1,14 +1,27 @@
 package com.example.streamApi.java8.streamApi;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Example {
+
+    //Java Stream API
+    //stexcelov mek angam stream ayn chenq karox bazmaki angam ogtagorcel
+    //steram karoxenq sarqel mi qani chanaparhov
+    //stream operation@ chi popoxum collection@
+    //Stream.empty(); collection.stream(); Arrays.stream(array);Stream.<String>builder().add("a").build(); Stream.iterate(40, n -> n + 2).limit(20);
+    //java 8-@ tyle talis sytexcel streamner primitiv tiperic,qani vor Stream@ generic e,nranq stexcel;en IntStream,DoubleStrem,LongStream interfacener@
+    //ays kerp xusapelov autoBoxingic injnel drakane azdum performance-i vra
+    //terminal operationic heto stream@ pakvume ev chenq karox kanchel eli terminal operation,
+    //drahamar petqe terminalic heto kanchenq nor stream heto terminal operation bayc ete ayd terminal operation@ chi veradardznum injvor konkret tip, int,boolean,double
+    //cankali e vor stream@ lini  vopres veradardznox arjeq
+    //intermediate oprtaionner@ LAZY en,minjev chkanchvi Terminal operation ayn chi execute lini,Terminalner@ EAGER en
+    //Stream@ chi linum methodi @ndunvox argument, classi field,
+    //steram@ vorpes methodi @ndunox argument chi kareli ogtagorcel,qani vopr ayn karoxe ev methodi mej ogtagorcvel ev minjev method@
+    //hasnel@,kam dranic heto, es paragayum kunenanq IllegalStateException qani vor stream@ mek angame kareli ogtagorcel
+    //Stream@ karoxe linel vorpes methodi veradardznox tip, qani vor amenangam menq nor stream kuxarkenq ev xndir chi lini ogtagorcman het
     //Stream stanalu exanakner.
     public static void main(String[] args) {
 
