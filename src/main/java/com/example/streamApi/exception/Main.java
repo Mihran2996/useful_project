@@ -49,11 +49,14 @@ public class Main {
     //ayn tuyle talis avtomat pakel bacvac resource ner@,
 
 
+
     public static void main(String[] args) {
 //        System.out.println(getEx().getCause());
 //        System.out.println(getEx().getMessage());
         getErr();
-        System.out.println("after error");
+//        System.out.println("after error");
+
+        finallyBlockDoesNotWork();
     }
 
     public static Exception getEx() {
@@ -76,6 +79,19 @@ public class Main {
             throw new OutOfMemoryError();
         }catch (OutOfMemoryError error){
             System.out.println("Cough the error");
+        }finally {
+            System.out.println("Finally block");
+        }
+    }
+
+    public static void finallyBlockDoesNotWork(){
+        try {
+            System.out.println("Try block");
+            //goyutyun uni mek depq erb finally block@ chi ashxatum,
+            //miayn ays methodi depqum vorovhetev ayn amboxjovin kangnecnume JVM i ashxatanq@
+            System.exit(0);
+        }catch (Exception e){
+            System.out.println("Catch block");
         }finally {
             System.out.println("Finally block");
         }
