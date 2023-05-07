@@ -11,7 +11,7 @@ public class Main {
 
         //The Cache-aside approach is one of the most commonly used caching strategies.
         //Erb app@ dimume redisin, ete tvyal key-ov data ka uremn cache-hit ev datan return kani
-        //ete chka data apa cache-miss, app@ kgna datan kvercni db-ic, kgri cahce0i mej, verjum return kani
+        //ete chka data apa cache-miss, app@ kgna datan kvercni db-ic, kgri cahce-i mej, verjum return kani
         //IMPLEMENTATIONS
         //1-When a query reaches, the application checks if the requested data is in the cache.
         //2-If yes, the cache returns the data.

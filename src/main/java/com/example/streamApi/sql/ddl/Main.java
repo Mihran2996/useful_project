@@ -1,4 +1,4 @@
-package com.example.streamApi.Maven.sql.ddl;
+package com.example.streamApi.sql.ddl;
 
 public class Main {
 

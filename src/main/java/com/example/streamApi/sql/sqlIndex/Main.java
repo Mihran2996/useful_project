@@ -1,4 +1,4 @@
-package com.example.streamApi.Maven.sql.sqlIndex;
+package com.example.streamApi.sql.sqlIndex;
 
 public class Main {
 

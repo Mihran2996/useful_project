@@ -1,4 +1,4 @@
-package com.example.streamApi.Maven.sql.DbNormalDbDenormal;
+package com.example.streamApi.sql.DbNormalDbDenormal;
 
 public class Main {
     //DATABASE NORMALIZATION
