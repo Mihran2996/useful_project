@@ -1,4 +1,4 @@
-package com.example.streamApi.stack.sqlNoSql;
+package com.example.streamApi.sqlNoSql;
 
 public class Main {
 
