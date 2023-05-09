@@ -2,18 +2,38 @@ package com.example.streamApi.sqlNoSql;
 
 public class Main {
 
+    //SQL(Relation) vs No SQL databases(NoN-Relation)
+
+    //Sql databases
+    //Stands for Structured Query Language
+    //Data is stored in tables with columns and rows
+    //Supports JOIN and complex queries
+    //Follows ACID properties (Atomicity, Consistency, Isolation, Durability) for transaction management
+    //Oracle, Microsoft SQL Server, PostgreSQL, MySQL, MariaDB
+
+
+    //No Sql databases
+    //Stands for Not Only SQL
+    //Data is stored in collections or documents
+    //Does not necessarily follow ACID properties
+    //Does not support JOIN and complex queries
+    //Uses denormalized data structure
+    //It is a type of database that uses non-relational data structures,
+    //such as documents, graph databases, and key-value stores to store and retrieve data.
+    //MongoDB, Google Cloud Firestore, Cassandra, Redis, Apache HBase, Amazon DynamoDB
+
+
     //What is BASE
     //Base-@ nkaragrume tvyalneri bazayi het mshakum@ kapvac NoSql bazaneri het
     //Base-@ aveli qich erashxiqnere talis qan ACID-@,bayc na aveli lava ardzaganqum tvyalneri arag popoxutyunnerin@
 
-
+    //GRAPH
     //Does Graph NoSQL datbases support ACID?
     //Graph databasen da ayne erb dataner@ haxordakcvumen irar het hanguycnerov
     //support anumen ACID-@
     //Graph database ner@ dranq NoSql databasanernen,iranq hamarvumen nonrelation databasaner
-    //Sql database ner@ relation en
-    //Sql database ner@ datan pahume table nerov
-    //NosSql@ pahume dokumenti teskov,kam key valueov orinak mongoDB-jsona pahum,Redis@ key-valueov
+    //Graph databasener@ datan storen anum vorpes node, ev noderi mijev kap@ kochvume edges,
+    //tvyal node uni uniwue key.ays databasener@ aragen ashxatum.
 
 
     //What is CAP
