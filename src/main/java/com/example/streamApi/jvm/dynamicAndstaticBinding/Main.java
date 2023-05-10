@@ -34,7 +34,7 @@ public class Main {
         //ays depqum petqa method@ kam private kam static lini
         //erb objceti tip@ voroshvace linum runtime da kochvume dynamic bindig kam dynamic compilation
         //compilyator@ ashxatume byName aysinqn hxumov vochte byType,
-        //qani vor Subclassi instancen nuynpes Supperclassi instance hamarvum,compilyatornel chi haskanum te vortexic petqa kanchi method@
+        //qani vor Subclassi instanc@ nuynpes Supperclassi instance hamarvum,compilyatornel chi haskanum te vortexic petqa kanchi method@
         //ayd isk patcharov na himnvume vochte hxman ayl tipi vra .
 
 //        obj1.print();

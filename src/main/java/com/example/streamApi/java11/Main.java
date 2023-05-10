@@ -8,6 +8,8 @@ public class Main {
     //Added the static not(Predicate<? super T> target) method in Predicate Functional interface
     //HTTP API `` HttpClient, HttpRequest, HttpResponse,WebSocket classes
     //Nest-Based Access Control
+    //was introduced the new garbage collector ` Z Garbage Collector
+
     public static void main(String[] args) {
 
         //STRING METHODS

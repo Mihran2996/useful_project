@@ -15,7 +15,7 @@ public class Main {
 
     //There are three phases in the class loading process: LOADING, LINKING, and INITIALIZATION.
 
-    //LOADING
+    //LOADING***********************************************************************************************************
     //Every class loader has a predefined location, from where they load class files.
     //I M P O R T A N T
     //The first class to be loaded into memory is usually the class that contains the main() method.
@@ -29,20 +29,20 @@ public class Main {
 
     //EXTENSIONS CLASSLOADER
     //It loads the classes available in the path represented by the system property java.ext.dirs
-    //it can load another jar file from our application which is for example library of other language
+    //it can load another jar file from our application which is for example library written with other language
 
     //APPLICATION OR SYSTEM CLASSLOADER
-    //It loads our application classes(the class written by us) from classpath
-
-    //JAVA CLASSLOADER WORKS IN THREE PRINCIPLES
-    //1-DELEGATION
-    //2-VISIBILITY
-    //3-UNIQUENESS
+    //It loads our application classes(the classes which are written by us) from classpath
 
     //The JVM uses the ClassLoader.loadClass() method for loading the class into memory.
     //It tries to load the class based on a fully qualified name.
     //If a parent class loader is unable to find a class, it delegates the work to a child class loader.
     //If the last child class loader isn't able to load the class either, it throws NoClassDefFoundError or ClassNotFoundException.
+
+    //JAVA CLASSLOADER WORKS IN THREE PRINCIPLES
+    //1-DELEGATION
+    //2-VISIBILITY
+    //3-UNIQUENESS
 
     //1-DELEGATION PRINCIPLE
     //As discussed on when a class is loaded and initialized in Java, a class is loaded in Java,when it's needed.
@@ -64,9 +64,7 @@ public class Main {
     //According to this principle, a class loaded by a Parent should not be loaded by Child ClassLoader again
 
 
-    //******************************************************************************************************************
-
-    //LINKING
+    //LINKING***********************************************************************************************************
     //After a class is loaded into memory, it undergoes the linking process.
     //Linking a class or interface involves combining the different elements and dependencies of the program together.
 
@@ -94,7 +92,7 @@ public class Main {
     //For example, if you have references to other classes or constant variables present in other classes,
     //they are resolved in this phase and replaced with their actual references.
 
-    //INITIALIZATION
+    //INITIALIZATION****************************************************************************************************
     //Initialization involves executing the initialization method of the class or interface (known as <clinit>).
     //This can include calling the class's constructor, executing the static block,
     //and assigning values to all the static variables. This is the final stage of class loading.
