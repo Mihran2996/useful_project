@@ -265,7 +265,7 @@ public class Collection {
 
 
         //Why the methd main() is STATIC
-        //JVM@ chi karox patrastel classi instance chkanchelov nra consttor@
+        //JVM@ chi karox patrastel classi instance chkanchelov nra 2constructor@@
         //ete tekuz jvm-@ kanchi default constructor apa class@ chpetqe lini ABSTARCT
         //ete tekuz class@ abstracte apa JVM-@ chgidi te inj argumentner petqa poxnci main methodin
         //hakarak depqum instance chi karoxana sarqel

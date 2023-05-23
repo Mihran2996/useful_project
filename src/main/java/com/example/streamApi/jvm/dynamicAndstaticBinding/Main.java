@@ -6,7 +6,7 @@ public class Main {
     public static class SupperClass {
 
         // Method of inner class
-        static void print() {
+         void print() {
 
             // Print statement
             System.out.println(
@@ -19,7 +19,7 @@ public class Main {
     public static class SubClass extends SupperClass {
 
         // Method of inner class
-        static void print() {
+         void print() {
             // print statement
             System.out.println(
                     "print() in subclass is called");
@@ -31,7 +31,6 @@ public class Main {
         SupperClass obj2 = new SubClass();
 
         //Dynamic Compilation
-        //ays depqum petqa method@ kam private kam static lini
         //erb objceti tip@ voroshvace linum runtime da kochvume dynamic bindig kam dynamic compilation
         //compilyator@ ashxatume byName aysinqn hxumov vochte byType,
         //qani vor Subclassi instanc@ nuynpes Supperclassi instance hamarvum,compilyatornel chi haskanum te vortexic petqa kanchi method@

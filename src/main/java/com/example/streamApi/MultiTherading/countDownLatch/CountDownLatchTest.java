@@ -7,8 +7,10 @@ public class CountDownLatchTest {
 
     //erbemn mez petqen vor thread@ start lini inj vor event-i start lineluc heto,spasi minjev event@ katarvi hetonstart lini
     public static void main(String[] args) throws InterruptedException {
-        //k4-@ da eventneri qanakne
-        CountDownLatch countDownLatch = new CountDownLatch(5);
+        //4-@ da eventneri qanakne
+        //orinak ete tiv@ tanq 5, bayc 4 angam kanchenq start@
+        //apa count@ kmna verjum 1, ev Main thread@ misht kmna waiting state um
+        CountDownLatch countDownLatch = new CountDownLatch(4);
 
         Thread first = new Thread(new Worker(1000, "Worker-1", countDownLatch));
         Thread second = new Thread(new Worker(2000, "Worker-2", countDownLatch));

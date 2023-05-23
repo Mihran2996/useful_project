@@ -1,9 +1,5 @@
 package com.example.streamApi.MultiTherading;
 
-import java.util.concurrent.*;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.locks.ReentrantLock;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -114,7 +110,6 @@ public class Main {
         //newSingleThreadPool();//ays method@ stexcume mek patok pooli hamar
 
 
-
         //What is ExecutorService
         //ExecutorService supporta anum pool@ threadneri hamar ev assighn e anum nranc hamar tasker
         //tasker@ inq@ pahuma hertakanutyamb, Queue-i mej ete taskeri qanak@ gerazancuma threadneri qanakin
@@ -216,7 +211,6 @@ public class Main {
         //What is an intrinsic lock?
 
 
-
         //ReentrantLock, the differene with synchronized blocks
         //synchronized@ chi apahovum injvor hertakanutyun ev voreve objecti durs galuc heto amen object karoxe vercnel blakirovken
         //synchronized-i depqum thread@ karoxe vercnel blokirovken mek angam
@@ -246,6 +240,11 @@ public class Main {
         //CountDownLatch-i constructor@ partadir @ndunume int count, da eventneri qanakne
         //cutDown() method@ decrimenta anum count@ ev erb ayn havasarvume 0-i apa glxavor thread@ durse galis blockic
         //await () method@ glxavor thread@ qcume blocki mej ev minjev count@ chhavasarvi 0-i unblock chi lini glxavor thread@
+
+        //What is Thread dumb
+        //fayle e, vori mej Thread dumb kancheluc ed fayle mej kgre application@ mej tvyal pahin run exac threadneri status@.
+        //heto hnaravore ed faylic vercnel kardal ed threadner@ inj patcharoven xapanvel
+
     }
 
 }

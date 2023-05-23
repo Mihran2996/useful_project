@@ -18,7 +18,7 @@ public class Worker implements Runnable {
     public void run() {
         try {
             Thread.sleep(delay);
-            //coutDown method@ count@ (ventneri qanak@ dencrementa anum)
+            //countDown method@ count@ (ventneri qanak@ dencrementa anum)
             countDownLatch.countDown();
             System.out.println(this.name + " finished!!!");
         } catch (InterruptedException e) {

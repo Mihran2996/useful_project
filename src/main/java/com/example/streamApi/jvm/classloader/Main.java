@@ -58,10 +58,16 @@ public class Main {
     //2-VISIBILITY PriPRINCIPLE
     //According to the visibility principle, Child ClassLoader can see class loaded by Parent ClassLoader
     //but vice-versa is not true. This means if class ` Some.class is loaded by Application class loader
-    //than trying to load class Some explicitly using extension ClassLoader will throw either java.lang.ClassNotFoundException.
+    //The Visibility Principle states that a class loaded by a parent ClassLoader is visible to the child ClassLoaders
+    //but a class loaded by a child ClassLoader is not visible to the parent ClassLoaders.
+    //Suppose a class GEEKS.class has been loaded by the Extension ClassLoader,
+    //then that class is only visible to the Extension ClassLoader and Application ClassLoader but not to the Bootstrap ClassLoader
+    //If that class is again tried to load using Bootstrap ClassLoader it gives an exception java.lang.ClassNotFoundException.
 
     //3-UNIQUENESS
-    //According to this principle, a class loaded by a Parent should not be loaded by Child ClassLoader again
+    //The Uniqueness Property ensures that the classes are unique and there is no repetition of classes.
+    //It allows to load a class once. It is achieved by delegation principle.
+    //It ensures that child ClassLoader doesn't reload the class, which is already loaded by the parent.
 
 
     //LINKING***********************************************************************************************************
