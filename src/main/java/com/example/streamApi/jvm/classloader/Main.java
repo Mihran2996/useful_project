@@ -57,7 +57,7 @@ public class Main {
 
     //2-VISIBILITY PriPRINCIPLE
     //According to the visibility principle, Child ClassLoader can see class loaded by Parent ClassLoader
-    //but vice-versa is not true. This means if class ` Some.class is loaded by Application class loader
+    //but vice-versa is not true.
     //The Visibility Principle states that a class loaded by a parent ClassLoader is visible to the child ClassLoaders
     //but a class loaded by a child ClassLoader is not visible to the parent ClassLoaders.
     //Suppose a class GEEKS.class has been loaded by the Extension ClassLoader,
@@ -106,7 +106,5 @@ public class Main {
     //private static final boolean enabled = true;
     //The variable enabled was set to its default value of FALSE during the preparation phase.
     //In the initialization phase, this variable is assigned its actual value of TRUE.
-
-
 
 }

@@ -69,7 +69,7 @@ public class Main {
 
     //******************************************************************************************************************
 
-    //Concurrent mark sweep drawbacks? Why and when it was deprecated?x
+    //Concurrent mark sweep drawbacks? Why and when it was deprecated?
     //It was deprecated in java 9
     //And was deleted in java 14.
 

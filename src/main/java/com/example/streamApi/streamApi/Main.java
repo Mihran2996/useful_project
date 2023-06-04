@@ -19,9 +19,9 @@ public class Main {
     //steram karoxenq sarqel mi qani chanaparhov
     //stream operation@ chi popoxum collection@
     //Stream.empty(); collection.stream(); Arrays.stream(array);Stream.<String>builder().add("a").build(); Stream.iterate(40, n -> n + 2).limit(20);
-    //java 8-@ tyle talis sytexcel streamner primitiv tiperic,qani vor Stream@ generic e,nranq stexcel;en IntStream,DoubleStrem,LongStream interfacener@
+    //java 8-@ tyle talis sytexcel streamner primitiv tiperic,qani vor Stream@ generic e,nranq stexcel en IntStream,DoubleStrem,LongStream interfacener@
     //ays kerp xusapelov autoBoxingic injnel drakane azdum performance-i vra
-    //terminal operationic heto stream@ pakvume ev chenq karox kanchel eli terminal operation,drahamar petqe terminalic heto kanchenq nor stream heto terminal operation
+    //terminal operationic heto stream@ pakvume ev chenq karox kanchel eli intermediate operation,drahamar petqe terminalic heto kanchenq nor stream heto intermediate operation
     //cankali e vor stream@ lini  vopres veradardznox arjeq
     //intermediate oprtaionner@ LAZY en,minjev chkanchvi Terminal operation ayn chi execute lini,Terminalner@ EAGER en
     //Stream@ chi linum methodi @ndunvox argument, classi field,

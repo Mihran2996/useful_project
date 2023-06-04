@@ -6,7 +6,7 @@ public class Main {
     //JVM architecture in Java contains CLASSLOADER, MEMORY AREA, EXECUTION ENGINE etc.
 
     //1) CLASSLOADER****************************************************************************************************
-    //The class loader is a subsystem used for loading class files. It performs three major functions viz.
+    //The class loader is a subsystem used for loading class files. It performs three major function viz.
     //LOADING, LINKING, and INITIALIZATION.
 
     //2) METHOD AREA (METASPACE)****************************************************************************************
@@ -30,6 +30,8 @@ public class Main {
     //It is written in another language instead of Java.
     //The JVM contains stacks that support native methods. These methods are written in a language other than the Java,
     //such as C and C++. For every new thread, a separate native method stack is also allocated.
+
+    //******************************************************************************************************************
 
     //7) EXECUTION ENGINE***********************************************************************************************
     //Once the bytecode has been loaded into the main memory, and details are available in the runtime data area,
@@ -59,7 +61,7 @@ public class Main {
     //System.out.println(sum);
     //*******************************************
     //
-    //Interpreter-@ amen iteraciayi jamanak sum-i valuen vercnume memory-ic, i-i valeun add anym sum-in ev het grum memory -i mej
+    //Interpreter-@ amen iteraciayi jamanak sum-i valuen vercnume memory-ic, i-i valeun add e anym sum-in ev het grum memory -i mej
     //sa shat caxsatar gorcoxutyune qani vor amen iteraciayi jamanak memory-ic kardacvum ev grvume sum-i arjeq@
     //JiT COMPILER-@ optimizacnume ays gorcoxutyun@
     //Jit@ kstexci sum-i local copy-n ev store kani PC Register-i mej, sum-in add kani i-i valuen loopi mej,
