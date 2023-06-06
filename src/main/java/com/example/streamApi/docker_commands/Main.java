@@ -89,4 +89,17 @@ public class Main {
     //starte anum containerner@
 
 
+    //*****************************************************
+    //MYSQL CONFIG
+    //ays hramanov run enq anum mysql-i container@
+    //mysql-docker-cont conatineri anunne
+    //mysql-@ immage-i annune
+    //docker run -d -p 3306:3306 --name mysql-docker-cont -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=exam -e MYSQL_USER=mihran -e MYSQL_PASSWORD=root mysql
+
+    //*****************************************************
+    //POSTGRESQL CONFIG
+    //ays hramanov run enq anum postgresql-i container@
+    //postgresql-cont  cantaineri anunne
+    //pstgres-@ immagei anune
+    //docker run --name postgresql-cont -p 5455:5432 -e POSTGRES_USER=mihran -e POSTGRES_PASSWORD=root -e POSTGRES_DB=postgresDB -d postgres
 }
