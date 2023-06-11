@@ -1,4 +1,4 @@
-package com.example.streamApi.sql.ddl;
+package com.example.streamApi.sql.ddl_dml_dcl_tcl_dql;
 
 public class Main {
 
@@ -25,7 +25,7 @@ public class Main {
     //delete command is in the DML commands (insert,update,delete)
     //Delete command is used Where condition,if condition true it will delete only single rows
     //Otherwise if it is used without Where it will delete all rows in the database
-    //Delete writes logs for each dremoved row in the transaction log.
+    //Delete writes logs for each removed row in the transaction log.
 
     //Truncate comman is in the DDL (Data Definition language)
     //Truncate is used without transaction , because of it we can't ROLLBACK  the data
@@ -40,7 +40,7 @@ public class Main {
     //GROUP BY comes after Where
 
     //We use Having only with Select
-    //GROUP BY comes before Where
+    //GROUP BY comes before Having
 
 
 }

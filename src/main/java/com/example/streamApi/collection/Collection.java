@@ -36,22 +36,6 @@ public class Collection {
         }
 
 
-        //LinkedList VS ArrayList
-        //LinkedList@ erkkapakcvac cucake
-        //ArrayList @ massive
-        //BigO in ArrayList
-        //get@ indexov misht arage cucanish@ - O/1 e
-        //ArrayList verjic remov@ - O/1 e
-        //ArrayList veric element add anel@ - O/1 e
-        //ete ArrayList-i mej verjic element enq add anum u capacity-n lcvace apa na peqtqe taza massiv sarqi u copy ani
-        //aysinqn ayd process@ dandaxe bayc eli konstant jamanakahatvacume texi unuenum O/1
-        //ArrayList-i mej mejtecic remove ev add anel@ - O/N e
-        //ArrayListi skszbic element add ev remove anel@ O/N e
-
-        //LinkedList-um demic,verjic element add,remove anel@  - O/1 e
-        //LinkedList-i mej element get anel@ - O/N e
-        //LinkedList-um mejtexic add,remove anel@ - O/n e qani vor indexov petqe da ani isk minjev ayd petqe gtni tvyal tex@ isk darden dandaxe
-
 
         //What is the difference between Iterator and ListIterator?
         //iterator@ colletion-i het ashxatume next elemntov-ov
@@ -86,7 +70,7 @@ public class Collection {
 
         //What is Enumeration?
         //Enumeration@ interface e
-        //Karoxe kanchvel menak Vector
+        //Karoxe kanchvel menak Vectoric
         //iteraciayi jamanak zugaher elmenent jnjeluc chi qcum ConcurrentModificationException.
         //Collections class@ uni enumeration() method@ vor@ andunume collectioni ev veradardznum enumuration
         Vector vector = new Vector();

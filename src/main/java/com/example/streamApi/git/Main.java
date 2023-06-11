@@ -14,7 +14,7 @@ public class Main {
 
 
     //git MERGE
-    //entadreng himnakan branchum ka1,2 commitner@,mer stexcac branchumel ka 3,4 commitner@,merge hramanic heto stexcvuma himnakan
+    //entadreng himnakan branchum ka 1,2 commitner@,mer stexcac branchumel ka 3,4 commitner@,merge hramanic heto stexcvuma himnakan
     //branchi vra 5-d commit@ vor@ ira mej parunakuma 1,2,3,4 commitner@
     //ka git merge 2 tarberak, MERGE ev REBASE
 
@@ -45,7 +45,7 @@ public class Main {
     //git REVERT
     //reverti depqum chi jnjvum,
     //orinak unenq a,b,c,d commitner@ ev mez petqe chexarkel c commit@
-    //menq nshumenq vorpeszi chexarki c-n ev d commitic heto unenumenq nor commit vor@ arden popoxvac ne aranc c commiti popoxutyunneri
+    //menq nshumenq vorpeszi chexarki c-n ev d commitic heto unenumenq nor commit vor@ arden popoxvac e aranc c commiti popoxutyunneri
     //reverti depqum git historyn chi poxvum
 
 
@@ -56,7 +56,7 @@ public class Main {
     //menq uzumenq jnjel B commit@ ev pahpanel C commit@,
     //revertenq anum C-n,revert enq anum B-n,aynuhetev C-ic Cherry Picke enq anum ev kstexcvi nor commit vorn uni A ev C commitner@
 
-    //Git WorFlow
+    //Git WorkFlow
     //sa chyuxavorman branchavorman  modele,GitFlown uni erkarakyac bazmativ chyuxer
     // developerner@ stexcumen branchner heto ayn merge anum himnakan branchin
 
@@ -86,7 +86,7 @@ public class Main {
     //4-create pull request to repository
 
     //FORK
-    //1-Forknq sarqum
+    //1-Forkenq sarqum
     //2-clonenq anum repon
     //3-edit enq anum cod@
     //4-pushenq anum

@@ -23,7 +23,7 @@ public class Main {
 
     //DROP
     //Command will delete the table
-    // DROP table Persons;
+    //DROP table Persons;
 
     //******************************************************************************************************************
 
@@ -99,6 +99,9 @@ public class Main {
 
     //Finds any values that start with "p" and ends with "s"
     //select * from Persons WHERE name LIKE 'p%s';
+
+    //NEGATIVE CASE
+    //SELECT * from Persons where  name  not like 'p%';
 
     //******************************************************************************************************************
 

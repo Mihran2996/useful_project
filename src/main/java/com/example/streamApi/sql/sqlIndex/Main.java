@@ -66,9 +66,9 @@ public class Main {
     //INCLUDE (Score)
 
     //-- Index 2   indexenq stexcum erku co,umni vra,arajin@ ViewCount-i,erkrord@ LastEditorDisplayName-i;
-//    CREATE NONCLUSTERED INDEX IX_ViewCount_LastEditorDisplayName
-//    ON Posts (ViewCount,LastEditorDisplayName)
-//    INCLUDE (Score)
+    //CREATE NONCLUSTERED INDEX IX_ViewCount_LastEditorDisplayName
+    //ON Posts (ViewCount,LastEditorDisplayName)
+    //INCLUDE (Score)
 
     //Unique Index
     //orinak Primary key@ da arden unique clustered indexe,

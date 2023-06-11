@@ -23,7 +23,7 @@ public class Main {
     // vor irenc realizacnox classner@ menak hog tanen ayn methodneri hamar voronq vor irenc petqen
 
     //D - DEPENDENCY INVERSION
-    //sa nshanakum e vor bardzr astchani modulner@ chpetqe kaxvacutyun unenan irenic cacar astchani modulneric
+    //sa nshanakum e vor bardzr astchani modulner@ chpetqe kaxvacutyun unenan irenic cacr astchani modulneric
     //petqe pahpanel abstrackcia
     //orinak controller@ miangamic chpetqa kanchi repository-i methodner@
     //ete menq orinak uzenanq vor merd db-i het ashxatanq@ katarvi MongoDb ov menq popoxutyunenq mtcneli conrolleri mej

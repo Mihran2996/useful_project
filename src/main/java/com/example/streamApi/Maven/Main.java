@@ -2,6 +2,8 @@ package com.example.streamApi.Maven;
 
 public class Main {
 
+    //https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+
     //CLEAN
     //ays hraman@ jnjume bolor fayler@ voronq stexcvelen naxord build-i jamanak,
     //target packagene jnjum vori mej jar faylern en

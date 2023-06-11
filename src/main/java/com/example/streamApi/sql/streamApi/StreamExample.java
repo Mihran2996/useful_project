@@ -1,4 +1,4 @@
-package com.example.streamApi.streamApi;
+package com.example.streamApi.sql.streamApi;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -78,7 +78,7 @@ public class StreamExample {
 
         //**************************************************************************************************************
 
-        //STRING OF STRING
+        //STREAM OF STRING
         //We can also use String as a source for creating a stream with the help of the chars() method of the String class.
         //Since there is no interface for CharStream in JDK, we use the IntStream to represent a stream of chars instead.
 
@@ -285,7 +285,7 @@ public class StreamExample {
         //The Java Stream findFirst() method finds the first element in the Stream if any elements are present in the Stream.
         //The findFirst() method returns an Optional from which you can obtain the element if present.
 
-        Optional<String> findFirst = Stream.of("one", "two", "three", "four").filter(x -> x.contains("t")).findAny();
+        Optional<String> findFirst = Stream.of("one", "two", "three", "four").filter(x -> x.contains("t")).findFirst();
 
 //        System.out.println(findFirst.get());
 

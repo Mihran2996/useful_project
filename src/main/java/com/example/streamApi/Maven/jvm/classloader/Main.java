@@ -1,4 +1,4 @@
-package com.example.streamApi.jvm.classloader;
+package com.example.streamApi.Maven.jvm.classloader;
 
 public class Main {
 
@@ -55,7 +55,7 @@ public class Main {
     //and Application class loader will never load that class but if it's not loaded by extension class-loader than
     //Application class loader loads it from Classpath in Java.
 
-    //2-VISIBILITY PriPRINCIPLE
+    //2-VISIBILITY PRINCIPLE
     //According to the visibility principle, Child ClassLoader can see class loaded by Parent ClassLoader
     //but vice-versa is not true.
     //The Visibility Principle states that a class loaded by a parent ClassLoader is visible to the child ClassLoaders
