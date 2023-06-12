@@ -1,4 +1,4 @@
-package com.example.streamApi.Maven.jvm.dynamicAndstaticBinding;
+package com.example.streamApi.jvm.dynamicAndstaticBinding;
 
 public class Main {
 

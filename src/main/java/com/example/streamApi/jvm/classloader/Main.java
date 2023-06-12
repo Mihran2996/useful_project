@@ -1,4 +1,4 @@
-package com.example.streamApi.Maven.jvm.classloader;
+package com.example.streamApi.jvm.classloader;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package com.example.streamApi.Maven.jvm.memory;
+package com.example.streamApi.jvm.memory;
 
 public class Main {
 
