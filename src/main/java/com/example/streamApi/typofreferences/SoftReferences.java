@@ -10,6 +10,7 @@ public class SoftReferences {
 
     //2.SOFT REFERENCES
 
+    //Simply put, an object that has a SoftReference pointing to it won't be garbage collected until the JVM absolutely needs memory.
     //Soft references are similar to weak references except that they are only garbage collected when the JVM has an
     //extreme shortage of memory (Unlike weak references which are immediately available for garbage collection).
 
@@ -32,7 +33,6 @@ public class SoftReferences {
         //memory.
 
         Robot rob2;
-
         //Accessing the object using softRef
         rob2 = softRef.get();
         System.out.println(rob2);

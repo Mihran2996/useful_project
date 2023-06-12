@@ -5,7 +5,6 @@ import java.awt.*;
 public class StrongReferences {
 
     //https://prateeknima.medium.com/strong-weak-soft-and-phantom-references-in-java-b4f9068e883e
-    //
 
     //1.STRONG REFERENCES
 

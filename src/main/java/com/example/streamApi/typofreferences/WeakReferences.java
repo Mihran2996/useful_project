@@ -10,6 +10,7 @@ public class WeakReferences {
 
     //3.WEAK REFERENCES
 
+    //The objects that are referenced only by weak references are garbage collected eagerly; the GC won't wait until it needs memory in that case.
     //A weak reference, simply put, is a reference that isn't strong enough to force an object to remain in memory.
     //An object kept from death only by a WeakReference won't survive the next garbage collection
 

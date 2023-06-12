@@ -1,8 +1,6 @@
 package com.example.streamApi.collection.list.vector;
 
 
-import java.util.Vector;
-
 public class Main {
 
     //https://www.geeksforgeeks.org/java-util-vector-class-java/?ref=gcse

@@ -52,4 +52,9 @@ public class User implements Comparable<User>{
     public int hashCode() {
         return Objects.hash(id, name, surname);
     }
+
+    public void finalize()
+    {
+        System.out.println("finalize method is called");
+    }
 }
