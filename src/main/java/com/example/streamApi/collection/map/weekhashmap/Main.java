@@ -9,6 +9,8 @@ import java.util.WeakHashMap;
 public class Main {
 
 
+    //https://www.geeksforgeeks.org/hashmap-vs-weakhashmap-java/
+
     //                                          STRONG REFERENCES
 
     //******************************************************************************************************************
