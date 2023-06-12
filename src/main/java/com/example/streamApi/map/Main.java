@@ -1,4 +1,4 @@
-package com.example.streamApi.collection.map;
+package com.example.streamApi.map;
 
 public class Main {
 

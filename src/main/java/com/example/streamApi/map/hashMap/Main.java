@@ -1,7 +1,4 @@
-package com.example.streamApi.collection.map.hashMap;
-
-import java.util.HashMap;
-import java.util.Map;
+package com.example.streamApi.map.hashMap;
 
 public class Main {
 

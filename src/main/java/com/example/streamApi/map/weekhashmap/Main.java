@@ -1,4 +1,4 @@
-package com.example.streamApi.collection.map.weekhashmap;
+package com.example.streamApi.map.weekhashmap;
 
 import com.example.streamApi.comparatorAndComparable.ComparableExample.User;
 
