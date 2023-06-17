@@ -17,7 +17,7 @@ public class Main {
 
     //*************************************************************
 
-    //0 (n) - It means that actions will be performed n times
+    //0 (n) - It means that actions will be performed in n times
     //arrayList.contains("a")
 
     //BEST CASE Big O (1) = If the "a" is at the first index of the array.
