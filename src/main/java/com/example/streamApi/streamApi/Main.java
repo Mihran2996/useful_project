@@ -1,4 +1,4 @@
-package com.example.streamApi.sql.streamApi;
+package com.example.streamApi.streamApi;
 
 import java.util.Arrays;
 import java.util.List;
