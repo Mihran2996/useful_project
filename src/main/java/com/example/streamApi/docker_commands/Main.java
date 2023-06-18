@@ -102,4 +102,26 @@ public class Main {
     //postgresql-cont  cantaineri anunne
     //pstgres-@ immagei anune
     //docker run --name postgresql-cont -p 5455:5432 -e POSTGRES_USER=mihran -e POSTGRES_PASSWORD=root -e POSTGRES_DB=postgresDB -d postgres
+
+    //*****************************************************
+    //https://hub.docker.com/r/jboss/keycloak/
+    //KEYCLOACK CONFIG
+
+    //PULL IMAGE
+    //docker pull jboss/keycloak
+    //*****************************************************
+
+    //RUN CONTAINER
+    //docker run jboss/keycloak
+    //*****************************************************
+
+    //EXPOSE A LOCALHOST
+    //docker run -p 8080:8080 jboss/keycloak
+    //*****************************************************
+
+    //CREATING ADMIN ACCOUNT
+
+    //docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin --name keyc jboss/keycloak
+    //*****************************************************
+
 }

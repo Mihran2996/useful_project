@@ -15,7 +15,7 @@ public class Main {
 
     //CONTINUES DEPLOYMENT
     //sa nuyn banne inj CI-@ uxxaki verjum deploya anum depi production
-    //deploy aneli depi production katarvume avtomat
+    //deploy anel@ depi production katarvume avtomat
 
     //CONTINUES DELIVERY
     //sa nuyn Continues Deploymentne uxxaki depi production deploy anel@ pipelin-@ dadarecnume ashxatanq@ ev developer@ manual e deploy anum
