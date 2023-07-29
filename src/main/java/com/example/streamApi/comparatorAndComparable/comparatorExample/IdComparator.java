@@ -3,7 +3,7 @@ package com.example.streamApi.comparatorAndComparable.comparatorExample;
 
 import java.util.Comparator;
 
-public class AgeComparator implements Comparator<User> {
+public class IdComparator implements Comparator<User> {
     @Override
     public int compare(User o1, User o2) {
 

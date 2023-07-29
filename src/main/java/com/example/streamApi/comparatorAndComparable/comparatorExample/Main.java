@@ -19,7 +19,7 @@ public class Main {
         userList.add(user2);
 
         //sortavorumenq tvyal Userneri list@ @st Age-i
-        Collections.sort(userList, new AgeComparator());
+        Collections.sort(userList, new IdComparator());
 
         Iterator<User> iterator = userList.iterator();
         while (iterator.hasNext()) {

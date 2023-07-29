@@ -11,7 +11,7 @@ public class Main {
 
     //PRIORITYQUEUE
 
-    //                                          BIG O COMPLEXITY IN ARRAYLIST
+    //                                          BIG O COMPLEXITY IN PRIORITYQUEUE
 
     //******************************************************************************************************************
     //offer() - will be O(n), because before adding it is sorted by Comparable or Comparator

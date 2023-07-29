@@ -9,7 +9,7 @@ public class Main {
 
 
     //Checked vs Unchecked
-    //Checked exceptionner@ stupumen compile time handle anel
+    //Checked exceptionner@ stipumen compile time handle anel
     //Unchecked exceptionner@ RunTimeException nernen voronq runtime en patahum
     //checked exceptionner@ stexcumen ete cragir@ gorce anum drsi resursneri het, orinak,fayleri, sqli het ev ayln,
     //unchecked exceptionner@ kapvacen cragri logikayi het.

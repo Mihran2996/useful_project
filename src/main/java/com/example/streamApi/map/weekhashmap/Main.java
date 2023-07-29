@@ -42,7 +42,7 @@ public class Main {
     //the GC won't wait until it needs memory in that case.
 
     //Integer prime = 1;
-    //WeakReference<Integer> soft = new WeakReference<Integer>(prime);
+    //WeakReference<Integer> week = new WeakReference<Integer>(prime);
     //prime = null;
 
     //When we made a prime reference null, the prime object will be garbage collected in the next GC cycle,

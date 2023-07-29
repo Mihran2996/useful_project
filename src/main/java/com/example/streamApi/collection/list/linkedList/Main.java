@@ -25,7 +25,7 @@ public class Main {
     //**************************************************
 
     //***************************************************
-    //get(15) - GET the element from and array will be = Big 1(n), it can get to the element by starting iteration from the end linkedList is implements DeQueue.
+    //get(15) - GET the element from end array will be = Big O(1), it can get to the element by starting iteration from the end linkedList is implements DeQueue.
     //***************************************************
 
     //***************************************************
@@ -37,7 +37,7 @@ public class Main {
     //***************************************************
 
     //***************************************************
-    //add() - ADD the element in the middle of linkedList will be = Big 1(n), because it has to find the corresponding index before adding.
+    //add() - ADD the element in the middle of linkedList will be = Big O(n), because it has to find the corresponding index before adding.
     //***************************************************
 
     //***************************************************

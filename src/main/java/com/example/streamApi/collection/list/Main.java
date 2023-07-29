@@ -6,7 +6,7 @@ public class Main {
 
     //LIST INTERFACE
 
-    //he Lists interface in Java provides a way to store the ordered collection. It is a child interface of Collection.
+    //The Lists interface in Java provides a way to store the ordered collection. It is a child interface of Collection.
     //It is an ordered collection of objects in which duplicate values can be stored.
     //The List interface is found in java.util package and inherits the Collection interface.
     //It is a factory of the ListIterator interface.

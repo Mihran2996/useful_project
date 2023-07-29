@@ -30,7 +30,7 @@ public class Main {
 
     //ADAPTER - Adapeter pattern@ stexcelov kamurj tuyle talis anhamatexeli interfacenerin haxordakcvel mimyanc het
     //DECORATOR - Tuyle talis poxel objecti varqagic@ bayc chxaxtelov classi himnakan strukturan
-    //FACADE - ays pattern@ taqcnume bardutyunner@ tramadrelov hesht inmterface ogtagorcelu hamar
+    //FACADE - ays pattern@ taqcnume bardutyunner@ tramadrelov hesht interface ogtagorcelu hamar
     //BRIDGE - ays pattern@ tuyle talis arandzin abstrakcianer implementaciayi hamar
     //PROXY - ays pattern@ stexcume mijnord clienti ev serveri mijev,haxordakcutyun@ texie unenum ira mijocov
     //COMPOSITE - ays pattern@ sahmanume 3 ket

@@ -13,6 +13,19 @@ public class Main {
     //pull@ ayd popoxutyunner@ copy anum beruma repository-ic
 
 
+    //git STASH
+    //Stashing takes the messy state of your working directory, and temporarily save it for further use.
+    //Many options are available with git stash. Some useful options are given below:
+    //git stash
+
+    //Git Stash Save (Saving Stashes with the message):
+    //In Git, the changes can be stashed with a message. To stash a change with a message, run the below command:
+    //git stash save "<Stashing Message>"
+
+    //Git Stash List (Check the Stored Stashes)
+    //To check the stored stashes, run the below command:
+    //git stash list
+
     //git MERGE
     //entadreng himnakan branchum ka 1,2 commitner@,mer stexcac branchumel ka 3,4 commitner@,merge hramanic heto stexcvuma himnakan
     //branchi vra 5-d commit@ vor@ ira mej parunakuma 1,2,3,4 commitner@
@@ -24,7 +37,7 @@ public class Main {
 
 
     //REBASE
-    //rebasei jamank local branch@ chi galis mianum himnakan branchin bayc popoxutyunner@ haytnvumen himnakan branchi vra
+    //rebase-i jamank local branch@ chi galis mianum himnakan branchin bayc popoxutyunner@ haytnvumen himnakan branchi vra
     //rebase-i jamank chi erevum vortexice ekel commit@,bayc ka commit
 
     //git HEAD
@@ -33,7 +46,7 @@ public class Main {
     //git RESET
     //reset@ jnjume commitner@
     //entadrenq unenq A(id=1),B(id=2),C(id=3),D(id=4) commitner@,amen commit uni ira id-n,mer git Head@ ayd depqum D commitne
-    //mez petqe chen C ev D commitner@ ev menq uzumenq veradarnal A ev B commitnerin,vorpeszi git head@ lini B commit@
+    //mez petq chen C ev D commitner@ ev menq uzumenq veradarnal A ev B commitnerin,vorpeszi git head@ lini B commit@
     //dra hamar petqe nshenq te vor commitnenq uzum lini git Head@ ,tvyal paragayum B commit@
     //git reset --hard 2//grumenq ays hraman@ verjim talov 2,B commiti idn
     //git push -f //aynuhetev petqa run annenq ays hraman@ vorpeszi popoxutyunner@ gnan himnakan branch

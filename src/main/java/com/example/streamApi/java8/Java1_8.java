@@ -114,7 +114,7 @@ public class Java1_8 {
     //Stream@ chi linum methodi @ndunvox argument, classi field,
     //steram@ vorpes methodi @ndunox argument chi kareli ogtagorcel,qani vopr ayn karoxe ev methodi mej ogtagorcvel ev minjev method@
     //hasnel@,kam dranic heto, es paragayum kunenanq IllegalStateException qani vor stream@ mek angame kareli ogtagorcel
-    //Stream@ karoxe linel vorpes methodi veradardznox tip, qani vor amenangam menq nor stream kuxarkenq ev xndir chi lini ogtagorcman het
+    //Stream@ karoxe linel vorpes methodi veradardznox tip, qani vor amen angam menq nor stream kuxarkenq ev xndir chi lini ogtagorcman het
 
 
     //PermGen vs Metaspace
