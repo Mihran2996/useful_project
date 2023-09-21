@@ -5,29 +5,29 @@
 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="department" class="com.example.streamApi.spring.autowiring.Department">
+    <bean id="department" class="com.example.app.spring.autowiring.Department">
         <property name="deptName" value="Information Technology"/>
     </bean>
 
     <!--   ogtagorcvume beani id-n, hxym@@ ev idn petqe nuyn@ lini, injcet arvume @st setter-i  -->
-        <bean id="employee" class="com.example.streamApi.spring.autowiring.Employee"
+        <bean id="employee" class="com.example.app.spring.autowiring.Employee"
               autowire="byName">
         </bean>
     <!--  setter-i ognutyambe inject anum, gtnume bean@ @st type-i, injecte anum tekuz ete beani id-n chi ham@nknum hxman het -->
-    <!--    <bean id="emp" class="com.example.streamApi.spring.autowiring.Employee"-->
+    <!--    <bean id="emp" class="com.example.app.spring.autowiring.Employee"-->
     <!--          autowire="byType">-->
     <!--    </bean>-->
 
 
     <!--    constructori mijocove inject arvum,ete ka constructor vor@ @ndunume miayn hamapatasxan argument@
      inject anelu hamar apa kkanchvi da, ete chka aydpisi constructor ev ka bolor fielderov constructor apa inject chi lini -->
-<!--    <bean id="emp" class="com.example.streamApi.spring.autowiring.Employee"-->
+<!--    <bean id="emp" class="com.example.app.spring.autowiring.Employee"-->
 <!--          autowire="constructor">-->
 <!--    </bean>-->
 
     <!--    constructori mijocove inject arvum,ete ka constructor vor@ @ndunume miayn hamapatasxan argument@
  inject anelu hamar apa kkanchvi da, ete chka aydpisi constructor ev ka bolor fielderov constructor apa inject chi lini -->
-<!--    <bean id="emp" class="com.example.streamApi.spring.autowiring.Employee"-->
+<!--    <bean id="emp" class="com.example.app.spring.autowiring.Employee"-->
 <!--          autowire="autodetect"/>-->
 
 </beans>

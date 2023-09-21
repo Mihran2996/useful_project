@@ -5,8 +5,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <bean id="music" class="com.example.streamApi.spring.differentInjection.model.RockMusic"/>
-    <bean id="musicPlayer" class="com.example.streamApi.spring.differentInjection.model.MusicPlayer">
+    <bean id="music" class="com.example.app.spring.differentInjection.model.RockMusic"/>
+    <bean id="musicPlayer" class="com.example.app.spring.differentInjection.model.MusicPlayer">
         <!--        name = "music" sa musicPlayerei setMusic() methodne e,spring@ haskanume vor set metod@ sksvume set barov
            ev qani vor camlcase dzevachapovenq grum javayi mej haskanume vor property-i meji name = "music" da nuyn setMusic() metodne-->
         <property name="music" ref="music"/>
