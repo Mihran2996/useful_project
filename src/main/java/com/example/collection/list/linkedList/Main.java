@@ -45,7 +45,7 @@ public class Main {
     //***************************************************
 
     //***************************************************
-    //remove(4)  - DELETE the element in the middle of linkedList will be Big O(n), because it has to find the corresponding index before adding.
+    //remove(4)  - DELETE the element in the middle of linkedList will be Big O(n), because it has to find the corresponding index before deleting.
     //***************************************************
 
     //***************************************************

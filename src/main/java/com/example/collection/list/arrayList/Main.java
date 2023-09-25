@@ -1,5 +1,7 @@
 package com.example.collection.list.arrayList;
 
+import java.util.ArrayList;
+
 public class Main {
 
 
@@ -20,7 +22,7 @@ public class Main {
     //                                          BIG O COMPLEXITY IN ARRAYLIST
 
     //***************************************************
-    //get(1) - GET method by index is always performed in constant time = Big O(1)
+    //get(1) - GET method by index is always performed in constant time = Big O(1), because ArrayList implements RandomAccess MarkUp interface which provides directly access to element
     //***************************************************
     //add(33) - ADD the element at the beginning of the array will be = Big O(n), because all elements to the right of index should move to the right
     //***************************************************
@@ -46,7 +48,7 @@ public class Main {
     //ArrayList is initialized by size. However, the size is increased automatically if the collection grows or shrinks if the objects are removed from the collection.
     //Java ArrayList allows us to randomly access the list.
     //ArrayList can not be used for primitive types, like int, char, etc. We need a wrapper class for such cases.
-    //ArrayList in Java can be seen as a vector in C++.
+    //ArrayList in Java can be seen as a Vector class in C++.
     //ArrayList is not Synchronized. Its equivalent synchronized class in Java is Vector.
 
     //*****************************************************************************************************************************************************
