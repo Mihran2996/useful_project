@@ -9,7 +9,6 @@ public class Main {
 
         //Big O
 
-        //If Stack use as LinkedList
         //***************************************************
         //push(33) - If there are free space the complexity will be = Big O(1)
         //***************************************************
