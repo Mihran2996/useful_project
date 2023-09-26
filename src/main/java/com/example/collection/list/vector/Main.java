@@ -8,7 +8,7 @@ public class Main {
     //                                          BIG O COMPLEXITY IN ARRAYLIST
 
     //***************************************************
-    //get(1) - GET method by index is always performed in constant time = Big O(1)
+    //get(1) - GET method by index is always performed in constant time = Big O(1), Vector has directly access to element
     //***************************************************
     //add(33) - ADD the element at the beginning of the array will be = Big O(n), because all elements to the right of index should move to the right
     //***************************************************

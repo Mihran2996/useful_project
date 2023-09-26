@@ -57,7 +57,7 @@ public class Main {
 
         System.out.println(queue);
 
-        //comparator() - Removes all of the elements from this priority queue.
+        //comparator() - Removes all the elements from this priority queue.
         Comparator<? super String> comparator = queue.comparator();
         System.out.println(comparator);
         //*****************************************
@@ -90,7 +90,7 @@ public class Main {
         while (iterator.hasNext()) {
             clone.offer(iterator.next());
         }
-        //containsAll(Collection<?> c) - Returns true if this collection contains all of the elements in the specified collection.
+        //containsAll(Collection<?> c) - Returns true if this collection contains all the elements in the specified collection.
         System.out.println(queue.containsAll(clone));
         //*****************************************
 

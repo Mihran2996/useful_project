@@ -9,10 +9,10 @@ public class Main {
 
     //ARRAYDEQUE
 
-    //                                          BIG O COMPLEXITY IN ARRAYLIST
+    //                                          BIG O COMPLEXITY IN ARRAYDEQUEUE
 
     //******************************************************************************************************************
-    //offer() - will be 1(n), because internally it will call offerLast(E e) which adds element since last
+    //offer() - will be O(1), because internally it will call offerLast(E e) which adds element since last
     //*************************************************
     //poll() - will be O(n), because after poll() it moves elements to the right of removed index the left.
     //*************************************************

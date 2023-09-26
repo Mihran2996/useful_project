@@ -4,6 +4,9 @@ public class Main {
 
     //https://skillbox.ru/media/code/big-o-notation-chto-eto-takoe-i-kak-eye-poschitat/
 
+    //Big O notation for java's collections
+    //https://gist.github.com/FedericoPonzi/8d5094dbae33cbb94536a73f62d1c1a0
+
     //BIG O NATION
     //Big O is necessary to describe complexity of the algorithm
 

@@ -17,7 +17,7 @@ public class Main {
     //Attempts to put an element into a full queue will result in the operation blocking.
     //We will get Exception in thread "main" java.lang.IllegalStateException: Queue full
     //Similarly attempts to take an element from an empty queue will also be blocked.
-    //Boundness of the ArrayBlockingQueue can be achieved initially bypassing capacity as the parameter in the constructor of ArrayBlockingQueue.
+    //Bounds of the ArrayBlockingQueue can be achieved initially bypassing capacity as the parameter in the constructor of ArrayBlockingQueue.
     //This queue orders elements FIFO (first-in-first-out).
     //It means that the head of this queue is the oldest element of the elements present in this queue.
 
