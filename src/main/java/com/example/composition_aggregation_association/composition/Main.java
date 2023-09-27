@@ -9,7 +9,7 @@ public class Main {
 
     //Now, Employee is accepting a parameter —  street which is needed to create an address.
     // Instead of injecting Address object via constructor, now employee is creating an Address object runtime inside the constructor.
-    //And this Employee has an private inner class of Address!
+    //And this Employee has a private inner class of Address!
 
     //Since it’s a private inner class, it’s not accessible to the outer world also!
     //Then clients cannot create independent objects of Address! It implies that Address is tightly coupled with the Employee…

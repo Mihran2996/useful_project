@@ -19,8 +19,8 @@ public class Main {
     //ArrayList performance is high
     //Multiple threads is allowed
 
-    //LINKED LIST
-    //Vector is synchronized.
+    //VECTOR
+    //is synchronized.
     //Vector increments 100% means doubles the array size
     //Vector is a legacy class.
     //Vector performance is low

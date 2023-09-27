@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class Main {
 
-    //https://www.geeksforgeeks.org/linked-list-vs-array/?ref=gcse
+    //https://www.geeksforgeeks.org/arraylist-vs-linkedlist-java/?ref=gcse
 
     //                             ARRAYLIST VS LINKED LIST
 
