@@ -4,7 +4,7 @@ public class Main {
 
     //Aggregation
 
-    //In aggregation, entities are loosely coupled together. The each entity can survive its own, independently.
+    //In aggregation, entities are loosely coupled together. Each entity can survive its own, independently.
     //There is only a dependency on the other. If the Container is destroyed, Component should be able to survive.
 
     //Let’s take an example…
