@@ -3,17 +3,17 @@ package com.example.designPatterns.creation.singleton;
 public class EagerSingleton {
 
 
-    // create an instance of the class.
-    // EagerSingleton - i object@ ksarqvi erb ClassLoader@ load kani class@ qani vor static e
-    //ev hnaravore vor ays object@ application-i runi jamanak @ndhanrapes chogtagorcvi
-    //aysinqn klini vor Eager singletone vorovhetev object@ chi inicializacvum methodi kanchov
+    //It's an Eager Singleton, it will initialize when the  Classloader loads the class since it is static variable,
+    //And there is a case when this object won't be using during application running.
+    //Therefore, we create an object pointless.
+    //Create an instance of the class.
     private static EagerSingleton instance = new EagerSingleton();
 
-    // private constructor, so it cannot be instantiated outside this class.
+    //Private constructor, so it cannot be instantiated outside this class.
     private EagerSingleton() {
     }
 
-    // get the only instance of the object created.
+    //Get the only instance of the object created.
     public static EagerSingleton getInstance() {
         return instance;
     }
