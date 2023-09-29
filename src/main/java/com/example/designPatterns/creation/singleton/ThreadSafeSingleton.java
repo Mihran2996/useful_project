@@ -9,12 +9,10 @@ public class ThreadSafeSingleton {
     private ThreadSafeSingleton() {
     }
 
-    //ays method@ kazdi performance-i vra
-    // check if the instance is null, within a synchronized block. If so, create the object
+    //Check if the instance is null, within a synchronized block. If so, create the object
+    //This method affects to performance, because we don't check for a null instance before defining synchronized block.
+    //And since the instance can not be a null, hence we create synchronized block before null check pointless.
     public static ThreadSafeSingleton getInstanceUsingBadPerformance() {
-        //estex performance kdandaxi  vorovhetev synchronized enq dardznum block@ ev heto stugum instance-i null linel@
-        //ev karoxe instancen null chi aysinqn animasta stugel synchronized-i mej ,iranic araj petqe stugvi null chlinelu depqum return kani
-        //hakarak depqum ete nulle nor texin cklini synchronized block@
         synchronized (ThreadSafeSingleton.class) {
             if (instance == null) {
                 instance = new ThreadSafeSingleton();
@@ -24,5 +22,14 @@ public class ThreadSafeSingleton {
 
     }
 
+    //It is good case, checking for a null instance before defining synchronized block
+    public static ThreadSafeSingleton getInstanceUsingGoodPerformance() {
+        if (instance == null) {
+            synchronized (ThreadSafeSingleton.class) {
+                return new ThreadSafeSingleton();
+            }
+        }
+        return instance;
+    }
 
 }
