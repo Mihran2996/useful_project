@@ -6,16 +6,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         //functional interface example
-        //apahovume aveli karch syntax
+        //Provides more suitable syntax
         Runnable runnable = () -> System.out.println("thread staretd");
         runnable.run();
 
 
 
 
-        //ays paragayum syntax@ aveli erkare,ev stexcvume anonymous class
+        //This situation is created anonymous class
         Runnable runnable1 = new Runnable() {
             @Override
             public void run() {
@@ -24,7 +23,7 @@ public class Main {
         };
         runnable1.run();
 
-        //Predicate functional  intyerfacen verdarznume tramabanakan arjeq
+        //Predicate functional interface returns logical value
         Predicate<Integer> predicate = t-> t==0;
         System.out.println(predicate.test(10));
 

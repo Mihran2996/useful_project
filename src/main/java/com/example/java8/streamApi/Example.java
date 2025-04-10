@@ -186,7 +186,7 @@ public class Example {
 
         List<String> singleStream = Arrays.asList("a", "b", "c", "d", "e", "f");
         long start = System.currentTimeMillis();
-        singleStream.stream().forEach(System.out::print);
+        singleStream.forEach(System.out::print);
         long end = System.currentTimeMillis();
         System.out.println(end - start);
         System.out.println();
