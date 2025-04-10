@@ -262,7 +262,6 @@ public class Java1_8 {
 //
 //    }
 
-
     //How iterations are different between collections and streams
     //stream-i foreach@ collection@ veracuma streami heto nor iteracia e katarum
 
