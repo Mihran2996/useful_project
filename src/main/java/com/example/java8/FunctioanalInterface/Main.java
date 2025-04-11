@@ -23,7 +23,7 @@ public class Main {
 
         //Supplier
         //This Functional Interface is used in all contexts where there is no input but an output is expected.
-        //it used in orElseGet method of Optional class
+        //it used in orElseGet method of Optional class and in generate() method of Stream Api
 
         //functional interface example
         //Provides more suitable syntax
