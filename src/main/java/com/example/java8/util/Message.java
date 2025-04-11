@@ -1,4 +1,4 @@
-package com.example.java8;
+package com.example.java8.util;
 
 public interface Message {
     void getMessage(String message);

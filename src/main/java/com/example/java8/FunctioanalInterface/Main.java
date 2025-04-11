@@ -15,6 +15,7 @@ public class Main {
 
         //Consumer
         //Consumer is a functional interface that accepts a single input and returns no output.
+        //it used in forEach method of Stream Api and Iterable interface
 
         //Predicate
         //This Functional Interface is used for conditional check.
@@ -22,6 +23,7 @@ public class Main {
 
         //Supplier
         //This Functional Interface is used in all contexts where there is no input but an output is expected.
+        //it used in orElseGet method of Optional class
 
         //functional interface example
         //Provides more suitable syntax

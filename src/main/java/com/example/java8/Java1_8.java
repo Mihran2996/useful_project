@@ -1,7 +1,10 @@
 package com.example.java8;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 public class Java1_8 {
 
@@ -228,6 +231,7 @@ public class Java1_8 {
 
     //How will you call a default method of an interface in a class?
     //classi mej default method@ kanchelu hamar petqe unenanq classi ekzemplyar@ ev iranic kanchel default method@
+    //kamel kanchel this-ic
 //    public static void main(String[] args) {
 //        class A implements Message {
 //
@@ -237,6 +241,7 @@ public class Java1_8 {
 //
 //            //default method called
 //            public void print() {
+//                this.defMethod();
 //                A a = new A();
 //                a.defMethod();
 //            }
@@ -247,23 +252,9 @@ public class Java1_8 {
     //What is private interface method?
     //interfacener@ ogtagorcumenq pravite methodner@ taqcnelov detalner@ irenc reailizacnox classneric  ev nranq kanchvum en default methodneri mej
 
-
-    //What is the use of ofNullable method in Stream?
-    //NullpointerExceptionic xusapelu hamar;;
-    //ete streami mej lini 5000 tiv@ apa kveradardzni te qani hat ka ays tvic ete che count@ klini null
-    //ete 5000- poxaren poxancenq null menq chenq stana NullPointerException uxxaki result@ klini int isk valeun 0.
-    //   int count = (int) Stream.ofNullable(5000).count();
-//    public static void main(String[] args) {
-//
-//        List<Integer> list = Arrays.asList(1,2,3,3,3);
-//        Stream<Integer> stream = list.stream();
-//        System.out.println(Stream.ofNullable(3).count());
-//
-//
 //    }
 
     //How iterations are different between collections and streams
     //stream-i foreach@ collection@ veracuma streami heto nor iteracia e katarum
-
 
 }

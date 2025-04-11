@@ -7,10 +7,6 @@ public class Dog implements A, B {
         B.super.some();
     }
 
-
-
-
-
     public static void main(String[] args) {
         Dog dog = new Dog();
         dog.some();

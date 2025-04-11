@@ -134,6 +134,9 @@ public class Java_8_Features {
     //5. Optional Class
 
     //Optional is a container class representing a value's presence or absence.
+    //1.We can use the Optional class to wrap our data and avoid the classical null checks and some of the try-catch blocks.
+    //As a result, we’ll be able to chain method calls and have more fluent, functional code.
+
     //It helps avoid null checks and NullPointerException.
     //It provides more suitable syntax
 

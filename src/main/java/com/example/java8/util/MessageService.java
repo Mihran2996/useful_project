@@ -1,4 +1,4 @@
-package com.example.java8;
+package com.example.java8.util;
 
 public class MessageService {
     public MessageService(String message) {
