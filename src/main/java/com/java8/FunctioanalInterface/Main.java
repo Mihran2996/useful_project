@@ -1,4 +1,4 @@
-package com.example.java8.FunctioanalInterface;
+package com.java8.FunctioanalInterface;
 
 import java.util.function.Predicate;
 

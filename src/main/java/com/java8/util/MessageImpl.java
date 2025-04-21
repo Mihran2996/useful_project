@@ -1,4 +1,4 @@
-package com.example.java8.util;
+package com.java8.util;
 
 public class MessageImpl implements Message {
     @Override

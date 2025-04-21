@@ -1,4 +1,4 @@
-package com.example.java8.diamondProblem;
+package com.java8.diamondProblem;
 
 public interface B {
 

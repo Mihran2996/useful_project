@@ -1,4 +1,4 @@
-package com.example.java8.optional;
+package com.java8.optional;
 
 import java.util.Optional;
 
