@@ -172,4 +172,7 @@ public class Java_8_Features {
     //Suppose you want to provide some implementation in your interface,
     //and you don’t want this implementation to be overridden in the implementing class, then you can declare the method as static.
 
+    //==========================================================================================================================
+
+    //9. PermGen replaced to MetaSpace
 }

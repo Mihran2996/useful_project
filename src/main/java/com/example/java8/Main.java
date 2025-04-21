@@ -1,7 +1,11 @@
 package com.example.java8;
 
 
-public class Main {
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.ForkJoinPool;
+
+public class   Main {
 
     //When will you use optional interface?
     //https://medium.com/javarevisited/4-reasons-why-you-should-use-java-optional-or-not-4e44d51a9645
@@ -129,8 +133,76 @@ public class Main {
     //===================================================================================================================================================================
 
     //How iterations are different between collections and streams
-    //todo
+
+    //for-loop
+    //Eager evaluation – All elements are stored in memory and available immediately.
+    //You iterate explicitly, often using a for loop or iterator.
+    //The control of iteration is external – you manage the loop.
+
+    //List<String> list = Arrays.asList("a", "b", "c");
+    //for (String s : list) {
+    //    System.out.println(s);
+    //}
+
+    //Behind the scenes:
+    //Java walks through each element in sequence (e.g., via Iterator).
+    //You decide when to stop, skip, or break.
 
 
+    //Stream iterator
+    //Lazy evaluation – Operations are not performed until a terminal operation is invoked.
+    //Iteration is internal – the stream handles the looping.
+    //Often used for functional-style operations like map, filter, reduce.
+
+    //Stream.of("a", "b", "c")
+    //      .map(String::toUpperCase)
+    //      .forEach(System.out::println);
+
+    //Behind the scenes:
+    //You describe what should happen, not how to do it.
+    //Stream handles iteration, optimization (like short-circuiting), and parallelism if desired.
+
+
+    //===================================================================================================================================================================
+
+    //What Is the Difference Between Map and flatMap Stream Operation?
+    //https://howtodoinjava.com/java8/stream-map-vs-flatmap/
+    //The map() operation is used to transform each element of a stream into another object using a given function.
+    //It returns a new stream containing the transformed elements in the same order as the original stream.
+
+    //The flatMap() operation is used when each element in the stream is transformed into multiple elements,
+    //often in the form of another collection or stream. The resulting elements are then flattened into a single stream.
+
+    //===================================================================================================================================================================
+
+    //How parallel streams work?
+    //https://medium.com/geekculture/pitfalls-of-java-parallel-streams-731fe0c1eb5f
+
+    //===================================================================================================================================================================
+
+    //Do we have PermGen in Java 8? Are you aware of MetaSpace?
+
+    //PermGen
+    //
+    //(Permanent Generation) is a special heap space separated from the main memory.
+    //The JVM keeps track of class metadata in the PermGen. Also, the JVM stores all the static content in this.
+    //Due to limited memory size, PermGen can throw OutOfMemoryError.
+    //Metaspace
+    //
+    //Metaspace is a new memory space.
+    //It has replaced the older PermGen memory space.
+    //It can now handle memory allocation.
+    //Metaspace grows automatically by default.
+
+    //===================================================================================================================================================================
+
+    //What methods are added to Collections in Java 9?
+
+    //List.of(...), Set.of(...), Map.of(...)
+    //They are immutable – trying to modify them (like add() or put()) throws UnsupportedOperationException.
+    //Nulls are not allowed – any null element or key/value will throw NullPointerException.
+    //Map.of() supports up to 10 key-value pairs. For more, use Map.ofEntries(...).
+
+    //===================================================================================================================================================================
 
 }
