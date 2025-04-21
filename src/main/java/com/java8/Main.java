@@ -205,4 +205,83 @@ public class   Main {
 
     //===================================================================================================================================================================
 
+    //https://medium.com/@itsandip1/understanding-javas-effectively-final-variables-61e03a0be93a#:~:text=So%2C%20what%20does%20%E2%80%9Ceffectively%20final,reassigned%20after%20its%20initial%20assignment.
+
+    //Final
+    //final int a = 20;
+    //Any attempt to change a will show compile error, this variable will be unchanged troughout its life
+
+    //Effectively final
+    //it comes from java8
+
+//    public static void main(String[] args) {
+//
+//        int a  =10; //this is explicitly effectively final,because it was not declared as final and it is never reassigned after its initial assignment
+//
+//        Runnable runnable = () -> { // Lambda expressions (() -> { ... }) can access and use these variables without any issues.
+//            System.out.println(a);
+//        };
+//
+//        a = 20;// You should comment this line because you will get : local variables referenced from a lambda expression must be final or effectively final
+//        runnable.run();
+//    }
+
+    //Why the variables used in lambda body should be final or effectively final
+    //When you use a lambda expression in Java, the compiler transforms it into an instance of a functional interface.
+    //Any variables from the enclosing scope that are used inside the lambda are captured by the lambda.
+
+    //int x = 5;
+    //Runnable r = () -> System.out.println(x);
+
+    //class LambdaImpl implements Runnable {
+    //    private final int capturedX;
+    //
+    //    LambdaImpl(int x) {
+    //        this.capturedX = x;
+    //    }
+    //
+    //    public void run() {
+    //        System.out.println(capturedX);
+    //    }
+    //}
+
+    //So the value of x is copied into the lambda object. This is safe because it’s guaranteed not to change.
+
+    //===================================================================================================================================================================
+
+    //Are you aware of Date and Time API introduced in Java 8? What the issues with Old Date and time API?
+
+    //Problems with the old API:
+    //lasses like Date and Calendar are mutable.
+    //This makes them unsafe in multithreaded environments, unless you synchronize access manually.
+
+    //Thread-safety issues
+    //SimpleDateFormat is not thread-safe, leading to subtle bugs in multithreaded environments.
+    //Developers often had to resort to using ThreadLocal<SimpleDateFormat> as a workaround.
+
+    //ZonedDate and Time – Developers had to write additional logic to handle time-zone logic with the old APIs,
+    //whereas with the new APIs, handling of time zone can be done with Local and ZonedDate/Time APIs.
+
+    //NEW API
+    //LocalDate date = LocalDate.now();
+    //DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+    //String formattedDate = date.format(formatter);
+    //
+    //LocalDate parsedDate = LocalDate.parse("21-04-2025", formatter);
+
+    //Old Date
+    //SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+    //String formattedDate = sdf.format(new Date());
+    //
+    //try {
+    //    Date parsedDate = sdf.parse("21-04-2025");
+    //} catch (ParseException e) {
+    //    e.printStackTrace();
+    //}
+
+    //SimpleDateFormat is not thread-safe, and parsing/formatting require checked exceptions
+
+    //===================================================================================================================================================================
+
+
 }
