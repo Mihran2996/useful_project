@@ -1,8 +1,10 @@
 package com.serialisation;
 
+import com.serialisation.exam.Person;
 import com.serialisation.util.User;
 import com.serialisation.util.UserDefense;
 
+import java.io.*;
 import java.util.Date;
 
 public class Main {
@@ -44,5 +46,15 @@ public class Main {
 //        System.out.println(user2);
 //    }
     //==========================================================================================================================
+
+    //https://medium.com/javarevisited/understanding-serialversionuid-in-java-07df4c57fc86
+    //What is SerialVersionUID
+
+    //During serialization process if we did not define serialVersionId the compiler will create it compile time
+    //If the object was modified (added new field, removed, changed), the version ov serialVersionId will be changed
+    //During deSerialization versionIds from loaded object and object to cast will not be equal and we will get an exception
+
+    //==========================================================================================================================
+
 
 }
