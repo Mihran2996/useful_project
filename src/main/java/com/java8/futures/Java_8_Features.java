@@ -1,4 +1,4 @@
-package com.java8;
+package com.java8.futures;
 
 public class Java_8_Features {
 
