@@ -27,8 +27,6 @@ public class Main {
 
         Student[] arrays = clone1.getArrays();
 
-
-
     }
 
     //Can interface have a field?
