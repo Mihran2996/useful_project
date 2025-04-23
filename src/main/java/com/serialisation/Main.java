@@ -1,5 +1,6 @@
 package com.serialisation;
 
+import com.example.test.List;
 import com.serialisation.exam.Person;
 import com.serialisation.util.User;
 import com.serialisation.util.UserDefense;
@@ -259,5 +260,32 @@ public class Main {
     //What are different types of shared memory? Describe the architecture of SMP
 
     //https://www.geeksforgeeks.org/what-is-a-shared-memory/
-    //
+
+    //==========================================================================================================================
+
+    //We also can do deep copy using serialization/deserialization
+
+    public class TestClass implements Serializable {
+
+      private static final long serialVersionUID = 1L;
+
+      private String firstName;
+      private String lastName ;
+      private List permissions;
+
+      public TestClass deepCopy() throws Exception {
+        //Serialization of object
+        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+        ObjectOutputStream out = new ObjectOutputStream(bos);
+        out.writeObject(this);
+
+        //De-serialization of object
+        ByteArrayInputStream bis = new ByteArrayInputStream(bos.toByteArray());
+        ObjectInputStream in = new ObjectInputStream(bis);
+        TestClass copied = (TestClass) in.readObject();
+        return copied;
+      }
+    }
+
+    //==========================================================================================================================
 }
