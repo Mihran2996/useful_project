@@ -8,6 +8,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class Main {
 
     public static void main(String[] args) {
+
         //Iteratorner@ linumen erku tesaki1 Fail Fast ev Fail Safe
         //Fail Fast iterator@ iteraciayi jamanak erb pordzenq modify anenq injvor element kunenanq ConcurrentModificationException
         //Fail Fast iterat@ uni modCount field  vor@ cuyce talis colection@ element@ popoxvace te che,ete popoxvace u menq modify enq anum element@ apa kunenanq exception@

@@ -53,6 +53,7 @@ public class Main {
 
     //==========================================================================================================================
 
+    //https://www.baeldung.com/java-serial-version-uid
     //https://medium.com/javarevisited/understanding-serialversionuid-in-java-07df4c57fc86
     //https://medium.com/@salvipriya97/serialization-and-deserialization-explained-with-examples-5e2e45af97ee
     //https://senoritadeveloper.medium.com/serialization-and-deserialization-in-java-what-is-serialversionuid-and-when-to-regenerate-it-22e1ee628675
@@ -63,6 +64,13 @@ public class Main {
     //If the object was modified (added new field, removed, changed), the version ov serialVersionId will be changed
     //During deSerialization versionIds from loaded object and object to cast will not be equal and we will get an exception
 
+    //The serialVersionId defined as static long
+    //we use the serialVersionUID attribute to remember versions of a Serializable class
+    //to verify that a loaded class and the serialized object are compatible.
+
+    //if there is not an serializeVersionId Jvm will create automatically
+    //if then we remove, change or add some field and try deserialize an object will get exception
+    //every time it is best practise to define serialVersionId
     //==========================================================================================================================
 
     //What is Serialization/DeSerialization
@@ -74,19 +82,7 @@ public class Main {
 
     //When objects need to be sent over a network between different applications or systems.
     // Storing an object’s state in a file or a database for later retrieval.
-
     //Serializable interface indicates that class can be serialized.
-
-    //What is serialVersionUID?
-    //https://www.baeldung.com/java-serial-version-uid
-
-    //The serialVersionId defined as static long
-    //we use the serialVersionUID attribute to remember versions of a Serializable class
-    //to verify that a loaded class and the serialized object are compatible.
-
-    //if there is not an serializeVersionId Jvm will create automatically
-    //if then we remove, change or add some field and try deserialize an object will get exception
-    //every time it is best practise to define serialVersionId
 
     //==========================================================================================================================
 
@@ -155,6 +151,7 @@ public class Main {
     //String json = gson.toJson(myObject);
 
     //https://www.geeksforgeeks.org/externalizable-interface-java/
+    //https://javarush.com/en/groups/posts/en.2023.externalizable-interface-in-java
     //Java Externalizable Interface
     //Externalizable extends from the java.io.Serializable marker interface.
     //Any class that implements Externalizable interface should override the writeExternal(), readExternal() methods.
@@ -244,7 +241,7 @@ public class Main {
     //
     //You must make them private and exactly match the signature.
 
-    //method mus be private, because under hood of  serialization works reflection, and reflection has access to private definition
+    //method must be private, because under hood of  serialization works reflection, and reflection has access to private definition
     //when jvm find overrides methods in our custom class use them instead of serialization mechanism
 
     //==========================================================================================================================
