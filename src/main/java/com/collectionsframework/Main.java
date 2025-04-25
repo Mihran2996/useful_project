@@ -1,6 +1,7 @@
 package com.collectionsframework;
 
 import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Main {
 
@@ -180,43 +181,194 @@ public class Main {
 
     //Example with custom comparator
 
-        public static void main(String[] args) {
-            // Custom Comparator that handles null keys
-            Comparator<String> nullFriendlyComparator = (s1, s2) -> {
-                if (s1 == null && s2 == null) return 0;
-                if (s1 == null) return -1; // null comes before non-null
-                if (s2 == null) return 1;  // non-null comes after null
-                return s1.compareTo(s2);
-            };
-
-            // TreeMap using the custom Comparator
-            TreeMap<String, String> map = new TreeMap<>(nullFriendlyComparator);
-
-            // Insert entries, including a null key
-            map.put(null, "Null Key Value");
-            map.put("Apple", "Fruit");
-            map.put("Banana", "Fruit");
-
-            // Print the TreeMap
-            for (Map.Entry<String, String> entry : map.entrySet()) {
-                System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
-            }
-        }
-    //==========================================================================================================================
-
-    //==========================================================================================================================
+//        public static void main(String[] args) {
+//            // Custom Comparator that handles null keys
+//            Comparator<String> nullFriendlyComparator = (s1, s2) -> {
+//                if (s1 == null && s2 == null) return 0;
+//                if (s1 == null) return -1; // null comes before non-null
+//                if (s2 == null) return 1;  // non-null comes after null
+//                return s1.compareTo(s2);
+//            };
+//
+//            // TreeMap using the custom Comparator
+//            TreeMap<String, String> map = new TreeMap<>(nullFriendlyComparator);
+//
+//            // Insert entries, including a null key
+//            map.put(null, "Null Key Value");
+//            map.put("Apple", "Fruit");
+//            map.put("Banana", "Fruit");
+//
+//            // Print the TreeMap
+//            for (Map.Entry<String, String> entry : map.entrySet()) {
+//                System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+//            }
+//        }
 
     //==========================================================================================================================
 
-    //==========================================================================================================================
+    //https://anmolsehgal.medium.com/fail-fast-and-fail-safe-iterations-in-java-collections-11ce8ca4180e#:~:text=Fail%2Dsafe%20iterators%20means%20they,modified%20while%20iterating%20over%20it.&text=As%20arrayLists%20are%20fail%2Dfast%20above%20code%20will%20throw%20an%20exception.
+    //What do you understand by FAIL-FAST?    : ArrayList is fail-fast
+
+    //that means that any changing of collection during iteration wil raise to ConcurrentModificationException
+    //How does it happen??
+
+    //Collections maintain an internal counter called modCount.
+    //Each time an item is added or removed from the Collection, this counter gets incremented.
+
+    //When iterating, on each next() call, the current value of modCount gets compared with the initial value.
+    //If there’s a mismatch, it throws ConcurrentModificationException which aborts the entire operation.
+
+//    public static void main(String[] args) {
+//        List <String> list = new ArrayList<>();
+//        list.add("A");
+//        list.add("B");
+//
+//        //modCount=2
+//        Iterator<String> iterator = list.iterator();// expectedModCount=modCount
+//        while (iterator.hasNext()) {
+//            System.out.println(iterator.next()); // if(expectedModCount != modCount) throw new ConcurrentModificationException
+//            list.add("Apple");  //modCount++
+//        }
+//
+//    }
 
     //==========================================================================================================================
 
-    //==========================================================================================================================
+    //What do you understand by FAIL-SAFE?    : CopyOnWriteArrayList is fail-safe
+
+    //Unlike the fail-fast iterators, these iterators traverse over the clone of the collection.
+    //So even if the original collection gets structurally modified, no exception will be thrown.
+
+
+    //So we clone original collection and each changes of original collection will not affect of clone
+//    public static void main(String[] args) {
+//        List <String> list = new CopyOnWriteArrayList<>();
+//        list.add("A");
+//        list.add("B");
+//
+//        Iterator<String> iterator = list.iterator();
+//        while (iterator.hasNext()) {
+//            System.out.println(iterator.next());
+//            list.add("Apple");
+//        }
+//
+//    }
 
     //==========================================================================================================================
 
+    //Can you use any class as a Map key?
+
+    //We can use any object as a key in a Map, but there are some important considerations regarding how the object behaves when used as a key.
+
+    //Override equals()
+    //Override hashCode()
+    //Make class Immutable
+
     //==========================================================================================================================
+
+    //https://www.tutorialspoint.com/java/java_dictionary_class.htm
+    //What is the Dictionary class?
+
+    //It is class of Key, Value pairs representation lik a map,
+    //it returns ENumeration which is Fail-Safe iterator
+
+    //==========================================================================================================================
+
+    //https://www.geeksforgeeks.org/how-to-make-an-arraylist-read-only-in-java/
+    //How to make Java ArrayList Read-Only?
+
+    //Collections.unmodifiableList(ArrayList);
+    //Using List.of() (Java 9 and above)
+
+    //==========================================================================================================================
+
+    //What is the contract between hashCode and equals?
+
+    //1. General Contract for equals():
+    //The equals() method is used to compare two objects for equality. The contract for equals() is as follows:
+    //
+    //Reflexive: For any non-null reference x, x.equals(x) should return true.
+    //
+    //Symmetric: For any non-null references x and y, if x.equals(y) is true, then y.equals(x) must also be true.
+    //
+    //Transitive: For any non-null references x, y, and z, if x.equals(y) and y.equals(z) are both true, then x.equals(z) must also be true.
+    //
+    //Consistent: For any non-null references x and y, if x.equals(y) is called multiple times during the execution of the program, it should consistently return the same result (if no properties of x or y are modified).
+    //
+    //Null comparison: For any non-null reference x, x.equals(null) should return false.
+
+
+    //2. General Contract for hashCode():
+    //The hashCode() method returns an integer that represents the hash code value of an object. The contract for hashCode() is as follows:
+    //
+    //Consistent: If an object is not modified, multiple invocations of hashCode() should consistently return the same value.
+    //
+    //Equality consistency: If two objects are considered equal by the equals() method (i.e., x.equals(y) is true), then x.hashCode() must be equal to y.hashCode().
+    //
+    //Unequal objects: If two objects are not considered equal (i.e., x.equals(y) is false), the hashCode() values may or may not be different.
+    //However, it is better if they are different to improve the performance of hash-based collections (but this is not required by the contract).
+
+    //Summary of the Contract:
+    //Equal objects must have equal hash codes.
+    //
+    //Unequal objects can have the same or different hash codes.
+
+    //IMPORTANT
+    //If you do not override the equals() method in Java,
+    //the default behavior of equals() (inherited from the Object class) will simply compare reference equality (i.e., whether two references point to the same object in memory).
+    //This means that two objects with the same data or content will be considered not equal unless they are actually the same object (i.e., they have the same memory reference).
+
+    //EXAMPLE
+
+    //public class Person {
+    //    private String name;
+    //    private int age;
+    //
+    //    public Person(String name, int age) {
+    //        this.name = name;
+    //        this.age = age;
+    //    }
+    //}
+    //
+    //public class Main {
+    //    public static void main(String[] args) {
+    //        Person person1 = new Person("Alice", 30);
+    //        Person person2 = new Person("Alice", 30);
+    //
+    //        System.out.println(person1.equals(person2));  // false
+    //    }
+    //}
+    //==========================================================================================================================
+
+    //When should we override hashcode and equals?
+    //When your class will be used as a key in a Map
+
+    //==========================================================================================================================
+
+    //How hashcode should be overriden?
+
+    //public class Person {
+    //    private String name;
+    //    private int age;
+    //
+    //    public Person(String name, int age) {
+    //        this.name = name;
+    //        this.age = age;
+    //    }
+    //
+    //    @Override
+    //    public boolean equals(Object obj) {
+    //        if (this == obj) return true;  // Same reference
+    //        if (obj == null || getClass() != obj.getClass()) return false;  // Null or different class
+    //        Person person = (Person) obj;  // Cast to correct type
+    //        return age == person.age && Objects.equals(name, person.name);  // Compare contents
+    //    }
+    //
+    //    @Override
+    //    public int hashCode() {
+    //        return Objects.hash(name, age);  // Consistent with equals()
+    //    }
+    //}
 
     //==========================================================================================================================
 
