@@ -1,6 +1,6 @@
 package com.example.typofreferences;
 
-import com.example.comparatorAndComparable.ComparableExample.User;
+import com.collectionsframework.differenceBetween.comparatorVScomparable.comparable.model.User;
 
 import java.lang.ref.WeakReference;
 

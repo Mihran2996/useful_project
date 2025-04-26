@@ -1,6 +1,6 @@
 package com.example.map.weekhashmap;
 
-import com.example.comparatorAndComparable.ComparableExample.User;
+import com.collectionsframework.differenceBetween.comparatorVScomparable.comparable.model.User;
 
 import java.util.HashMap;
 import java.util.Map;
