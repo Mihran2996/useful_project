@@ -207,9 +207,10 @@ public class   Main {
 
     //https://medium.com/@itsandip1/understanding-javas-effectively-final-variables-61e03a0be93a#:~:text=So%2C%20what%20does%20%E2%80%9Ceffectively%20final,reassigned%20after%20its%20initial%20assignment.
 
+    //FINAL & EFFECTIVELY-FINAL
     //Final
     //final int a = 20;
-    //Any attempt to change a will show compile error, this variable will be unchanged troughout its life
+    //Any attempt to change a will show compile error, this variable will be unchanged throughout its life
 
     //Effectively final
     //it comes from java8

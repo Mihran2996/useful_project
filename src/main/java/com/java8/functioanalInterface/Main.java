@@ -14,7 +14,7 @@ public class Main {
         //then compiler show error message “Invalid ‘@FunctionalInterface’ annotation”
 
         //Consumer
-        //Consumer is a functional interface that accepts a single input and returns no output.
+        //is a functional interface that accepts a single input and returns no output.
         //it used in forEach method of Stream Api and Iterable interface
 
         //Predicate
