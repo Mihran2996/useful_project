@@ -240,9 +240,18 @@ public class Main {
     //readObject() is automatically called when ObjectInputStream.readObject() is used.
     //
     //You must make them private and exactly match the signature.
-
+    //
     //method must be private, because under hood of  serialization works reflection, and reflection has access to private definition
-    //when jvm find overrides methods in our custom class use them instead of serialization mechanism
+
+
+    //How it works behind the scenes
+    //1. Checks if the object’s class implements Serializable.
+
+    //2. Looks (via reflection) for a private method with this exact signature:
+          // private void writeObject(ObjectOutputStream out) throws IOException;
+          // private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException
+
+    //3.If found, it invokes that method instead of using the default serialization.
 
     //==========================================================================================================================
 
