@@ -29,7 +29,7 @@ public class Main {
 //        System.out.println();
 //        System.out.println("After changing birthday");
 //        System.out.println();
-//        //here we change date and it affects to user object
+//        //here we change date, and it affects to user object
 //        birthDay.setTime(1);
 //
 //        System.out.println(birthDay);
@@ -44,7 +44,7 @@ public class Main {
 //        System.out.println();
 //        System.out.println("After changing birthday");
 //        System.out.println();
-//        //here we change date and it does not affects to user object
+//        //here we change date, and it does not affect to user object
 //        birthDay2.setTime(1);
 //
 //        System.out.println(birthDay2);
@@ -62,14 +62,14 @@ public class Main {
 
     //During serialization process if we did not define serialVersionId the compiler will create it compile time
     //If the object was modified (added new field, removed, changed), the version ov serialVersionId will be changed
-    //During deSerialization versionIds from loaded object and object to cast will not be equal and we will get an exception
+    //During deSerialization versionIds from loaded object and object to cast will not be equal, and we will get an exception
 
     //The serialVersionId defined as static long
     //we use the serialVersionUID attribute to remember versions of a Serializable class
     //to verify that a loaded class and the serialized object are compatible.
 
     //if there is not an serializeVersionId Jvm will create automatically
-    //if then we remove, change or add some field and try deserialize an object will get exception
+    //if then we remove, change or add some field and try to deserialize an object will get exception
     //every time it is best practise to define serialVersionId
     //==========================================================================================================================
 
@@ -91,7 +91,7 @@ public class Main {
 
     //Why not just switch to json?
 
-    //Excel or document templating use-cases: If you're using JXLS (which you mentioned before),
+    //Excel or document templating use-cases: If you're using JXLS,
     //JSON won't work natively — it's built for Excel templating using beans and XML-based configs.
 
     //No built-in support for comments: JSON doesn't support comments,
@@ -128,7 +128,7 @@ public class Main {
 
     //What will be the value of transient variable after de-serialization?
 
-    //Default values of transient fields after deserialization:'
+    //Default values of transient fields after deserialization:
 
     //Type	                          Default after deserialization
     //Object	                          null
