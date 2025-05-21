@@ -202,7 +202,6 @@ public class Main {
     //
     //toString()
     //Returns a string like "java.lang.NullPointerException: message", handy for logging.
-
     //==========================================================================================================================================
 
 }
