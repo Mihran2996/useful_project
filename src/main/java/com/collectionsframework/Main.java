@@ -76,7 +76,7 @@ public class Main {
     //TreeMap<K, V>
     //Implements NavigableMap
     //Keys are sorted
-    //No null keys allowed'
+    //No null keys allowed
 
     //Hashtable<K, V>
     //Legacy class
@@ -346,7 +346,7 @@ public class Main {
 
     //==========================================================================================================================
 
-    //How hashcode should be overriden?
+    //How hashcode should be overridden?
 
     //public class Person {
     //    private String name;
@@ -441,7 +441,7 @@ public class Main {
 
     //==========================================================================================================================
 
-    //Why vectors and hashtables are not recommended to use?
+    //Why vectors and hashtable are not recommended to use?
 
     //They are synchronized for thread-safety at method level, which is very inefficient.
     //public synchronized void addElement(E e) {
@@ -470,7 +470,7 @@ public class Main {
 
     //The class is based on the basic principle of LIFO (last-in-first-out).
     //The Stack class extends Vector
-    //he Stack class can be considered as a subclass of Vector because it inherits all of its methods and properties.
+    //Stack class can be considered as a subclass of Vector because it inherits all of its methods and properties.
 
     //Methods
     //push: This method pushes an element on the top of the stack.

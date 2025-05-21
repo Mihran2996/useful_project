@@ -57,7 +57,11 @@ public class Main {
 
         System.out.println(queue);
 
-        //comparator() - Removes all the elements from this priority queue.
+        //comparator() - Returns the comparator that the queue uses to order its elements
+        //If the queue uses natural ordering (e.g., alphabetical for String), then comparator() will return null.
+        //
+        //If a custom comparator was provided when the priority queue was created, it will return that comparator object.
+
         Comparator<? super String> comparator = queue.comparator();
         System.out.println(comparator);
         //*****************************************

@@ -66,8 +66,22 @@ public class Main {
         //otherwise it will return the HEAD element (from start)
 
         System.out.println(queue.poll()); // when we remove an element, the waiting thread adds element
-        Thread.sleep(4000);
+        Thread.sleep(3000);
         System.out.println(queue);
+
+        //remove all queue
+        queue.clear();
+        System.out.printf("Queue size: %d\n", queue.size());
+
+        Thread toRemove = new Thread(queue::remove);
+        toRemove.start();//will get NoSuchElementException because queue is empty
+
+        //here we add elemnt
+        queue.add(77);
+        System.out.println(queue);
+
+        Thread.sleep(3000);
+        System.out.println(queue);//will show empty because toRemove thread was waiting in block and when we add 77 value thread went out of block and removev
 
         //**************************************************************************************************************
 

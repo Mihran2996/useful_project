@@ -34,14 +34,24 @@ public class Main {
 
     //***************************************************
     //add(33) - ADD the element at the end of array will be = Big O(n) ======= if we have a TAIL NODE otherwise it will be BIg O(1)
+    //- Singly Linked List without a tail pointer:
+    //To add an element at the end, you must traverse the whole list to find the last node. Time complexity: O(n)
+    //
+    //- Singly Linked List with a tail pointer:
+    //You already know where the last node is (the tail), so you can directly add the new node. Time complexity: O(1)
     //***************************************************
 
     //***************************************************
-    //add() - ADD the element in the middle of linkedList will be = Big O(n), because it has to find the corresponding index before adding.
+    //add(12) - ADD the element in the middle of linkedList will be = Big O(n), because it has to find the corresponding index before adding.
     //***************************************************
 
     //***************************************************
     //remove(9)  - DELETE the element in the end of array will be Big O(n) ======= if we have a TAIL NODE otherwise it will be BIg O(1)
+    //- Singly Linked List without a tail pointer:
+    //To remove an element at the end, you must traverse the whole list to find the last node. Time complexity: O(n)
+    //
+    //- Singly Linked List with a tail pointer:
+    //You already know where the last node is (the tail), so you can directly remove the node. Time complexity: O(1)
     //***************************************************
 
     //***************************************************

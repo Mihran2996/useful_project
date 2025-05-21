@@ -5,7 +5,7 @@ public class Main {
 
     //https://www.geeksforgeeks.org/java-util-vector-class-java/?ref=gcse
 
-    //                                          BIG O COMPLEXITY IN ARRAYLIST
+    //                                          BIG O COMPLEXITY IN VECTOR
 
     //***************************************************
     //get(1) - GET method by index is always performed in constant time = Big O(1), Vector has directly access to element

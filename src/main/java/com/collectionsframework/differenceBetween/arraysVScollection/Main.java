@@ -8,7 +8,7 @@ public class Main {
     //What are the main differences between array and collection?
 
     //Arrays
-    //Arrays are fixed in size that is once we create an array we can not increased or decreased based on our requirement.
+    //are fixed in size that is once we create an array we can not increase or decreased based on our requirement.
     //Arrays can hold both object and primitive data type .
 
     //Collections

@@ -9,7 +9,7 @@ public class Main {
 
     //*****************************************************************************************************************************************************
 
-    //Java ArrayList is a part of the Java collection framework and it is a class of java.util package.It provides us with dynamic arrays in Java.
+    //Java ArrayList is a part of the Java collection framework, and it is a class of java.util package.It provides us with dynamic arrays in Java.
     //Though, it may be slower than standard arrays but can be helpful in programs where lots of manipulation in the array is needed.
     //This class is found in java.util package. The main advantages of Java ArrayList are,
     //if we declare an array then it’s needed to mention the size but in ArrayList,
