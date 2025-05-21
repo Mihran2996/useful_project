@@ -2,7 +2,7 @@ package com.example.exception;
 
 public class Main {
 
-    //Whay we need EXCEPTION
+    //Why we need EXCEPTION
     //Exception handle-ing@ ogtagorcvume apahovelu hamar  vor cragir@ ktruk chdadarecvi.
     //ete mej try/catch chenq ogtagorcum ev orinak cragir@ uzume gtneol fail ev fail@ chka apa ayn chgiti te injpese kang arnelu ev kngni anverj cikli mej.
     //isk ete try/catchov brnenq handle kanenq..
