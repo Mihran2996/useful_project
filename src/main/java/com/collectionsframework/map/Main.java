@@ -1,4 +1,4 @@
-package com.example.map;
+package com.collectionsframework.map;
 
 public class Main {
 
@@ -9,7 +9,7 @@ public class Main {
     //******************************************************************************************************************
     //In Java, Map Interface is present in java.util package represents a mapping between a key and a value.
     //Java Map interface is not a subtype of the Collection interface.
-    //Therefore it behaves a bit differently from the rest of the collection types. A map contains unique keys.
+    //Therefore, it behaves a bit differently from the rest of the collection types. A map contains unique keys.
 
     //Maps are perfect to use for key-value association mapping such as dictionaries.
     //The maps are used to perform lookups by keys or when someone wants to retrieve and update elements by keys.

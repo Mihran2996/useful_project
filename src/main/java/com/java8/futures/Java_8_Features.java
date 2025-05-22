@@ -43,7 +43,7 @@ public class Java_8_Features {
     //MyFunctionalInterface action = () -> System.out.println("Action performed");
     //action.perform();
 
-    //2.1 Why functional interface has a single abstract method
+    //2.1 Why functional interface has a single abstract method?
 
     //A functional interface in Java has a single abstract method
     //because it enables lambda expressions and method references to be used unambiguously and concisely.
@@ -77,9 +77,9 @@ public class Java_8_Features {
 
     //==========================================================================================================================
 
-    //3. Method References
+    //3. What are Method References
 
-    //Method references provide a way to refer to methods without invoking them.
+    //Method references to provide a way to refer to methods without invoking them.
     //They are compact and readable and can be used with lambda expressions.
 
     //TYPE                                                                          EXAMPLE                    EQUIVALENT LAMBDA
@@ -131,7 +131,7 @@ public class Java_8_Features {
 
     //==========================================================================================================================
 
-    //5. Optional Class
+    //5. What is Optional Class?
 
     //Optional is a container class representing a value's presence or absence.
     //1.We can use the Optional class to wrap our data and avoid the classical null checks and some of the try-catch blocks.
@@ -153,7 +153,7 @@ public class Java_8_Features {
 
     //==========================================================================================================================
 
-    //7. Default methods
+    //7. What are Default methods?
 
     //The reason why the Java 8 release included default methods is pretty obvious.
     //In a typical design based on abstractions, where an interface has one or multiple implementations,
@@ -165,7 +165,7 @@ public class Java_8_Features {
 
     //==========================================================================================================================
 
-    //8. Static methods
+    //8.What are Static methods?
 
     //The static methods in interfaces are similar to default methods but the only difference is that you can’t override them.
     //Now, why do we need static methods in interfaces if we already have default methods?

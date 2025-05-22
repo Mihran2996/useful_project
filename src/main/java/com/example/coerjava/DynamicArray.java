@@ -41,8 +41,6 @@ public class DynamicArray<T> implements Cloneable{
 
     @Override
     public Object clone()throws CloneNotSupportedException{
-
-
         DynamicArray<T>  clone =(DynamicArray<T> ) super.clone();
         try {
             clone.setArrays(copyValue());

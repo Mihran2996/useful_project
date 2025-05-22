@@ -1,4 +1,4 @@
-package com.example.map.hashMap;
+package com.collectionsframework.map.hashMap;
 
 public class Main {
 

@@ -78,23 +78,22 @@ public class   Main {
 
     //===================================================================================================================================================================
 
-    //What is private interface method?
     //https://medium.com/@salimoncu.fb/using-private-methods-in-java-interfaces-90670367447d
+
+    //What is private interface method?
     //Interfaces are able to use private methods to hide details on implementation from classes that implement the interface.
     //Private interface methods can be static or instance. In both cases, the private method is not inherited by sub-interfaces or implementations
     //.They are mainly there to improve code re-usability within interface only — thus improving encapsulation.
 
     //==========================================================================================================================
-
-    //What is the use of ofNullable method in Stream?
     //https://rameshfadatare.medium.com/java-stream-ofnullable-method-with-examples-d2265648225b#:~:text=ofNullable()%20method%20is%20used,a%20concise%20and%20readable%20manner.
 
+    //What is the use of ofNullable method in Stream?
     //The Stream.ofNullable() method allows you to create a stream from a single value that may be null.
     //If the value is null, the method returns an empty stream.
     //This provides a convenient way to handle optional values in a stream processing pipeline.
 
     //===================================================================================================================================================================
-
 
     //https://medium.com/@AlexanderObregon/javas-try-with-resources-statement-explained-6b0ebf84d582
 
@@ -165,8 +164,9 @@ public class   Main {
 
     //===================================================================================================================================================================
 
-    //What Is the Difference Between Map and flatMap Stream Operation?
     //https://howtodoinjava.com/java8/stream-map-vs-flatmap/
+
+    //What Is the Difference Between Map and flatMap Stream Operation?
     //The map() operation is used to transform each element of a stream into another object using a given function.
     //It returns a new stream containing the transformed elements in the same order as the original stream.
 

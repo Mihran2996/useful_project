@@ -1,4 +1,4 @@
-package com.example.map.weekhashmap;
+package com.collectionsframework.map.weekhashmap;
 
 import com.collectionsframework.differenceBetween.comparatorVScomparable.comparable.model.User;
 
