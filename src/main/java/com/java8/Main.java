@@ -44,7 +44,12 @@ public class   Main {
     //    return account.getMembership();
     //}
     //
-    //public Membership getAccountMembership_optional() {
+
+    //This method tries to find the account "johnDoe".
+    //If found, it then tries to get the account’s membership.
+    //If either the account or membership is missing, it throws AccountNotEligible.
+
+    // public Membership getAccountMembership_optional() {
     //    return accountRepository.find("johnDoe")
     //        .flatMap(Account::getMembershipOptional)
     //        .orElseThrow(AccountNotEligible::new);

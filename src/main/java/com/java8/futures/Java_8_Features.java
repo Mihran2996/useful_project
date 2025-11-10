@@ -1,5 +1,7 @@
 package com.java8.futures;
 
+import java.util.function.Predicate;
+
 public class Java_8_Features {
 
     //What are new features which got introduced in Java 8?
