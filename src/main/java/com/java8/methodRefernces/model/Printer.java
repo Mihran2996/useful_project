@@ -6,5 +6,4 @@ public class Printer <T>{
         System.out.println(t);;
     }
 
-
 }
